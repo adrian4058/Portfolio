@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
-  width: 80px;
+  width: 70px;
   transition: 0.5s all ease-in;
 `;
 
@@ -30,11 +30,10 @@ export const ButtonSwitch = styled.button`
   height: 15px;
   border: none;
   background: none;
-  svg {
-    ${'' /* font-size: 0.8rem; */}
-    fill: #fff;
-  }
   outline: none;
   transition: 0.4s all ease-in;
+  svg {
+    fill: #fff;
+  }
   padding: 0;
 `;
