@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
   width: 70px;
+  margin: 0 0.5rem;
   transition: 0.5s all ease-in;
 `;
 

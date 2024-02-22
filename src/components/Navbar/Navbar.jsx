@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState } from "react";
 import Switch from "../Switch/Switch";
 import {
   LogoName,
@@ -10,10 +10,19 @@ import {
   NavBarSize,
   NavBarSwitch,
   PuntoDetail,
+  LinksButtons,
+  ListLinks,
+  LinksNav,
 } from "./Navbar.elements";
-import { ImMenu3 } from "react-icons/im";
+import { ImMenu3, ImMenu4 } from "react-icons/im";
 
 const Navbar = ({ theme, setTheme }) => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   const Links = [
     { name: "Inicio", link: "#home" },
     { name: "Sobre mi", link: "#about" },
@@ -28,12 +37,20 @@ const Navbar = ({ theme, setTheme }) => {
           <PuntoDetail>.</PuntoDetail>
         </NavBarLogos>
         <NavBarLinks>
-          <ul className="LinksButtons">
-            <li className="ListLinks"></li>
-          </ul>
+          <LinksButtons className={`${clicked ? "active" : ""}`}>
+            {Links.map((link, index) => (
+              <ListLinks key={index}>
+                <LinksNav href={link.link}>{link.name}</LinksNav>
+              </ListLinks>
+            ))}
+          </LinksButtons>
           <NavBarSwitch>
             <Switch theme={theme} setTheme={setTheme} />
-            <ImMenu3 className="Navbar__menu" />
+            {clicked ? (
+              <ImMenu4 className="Navbar__menu" onClick={handleClick} />
+            ) : (
+              <ImMenu3 className="Navbar__menu" onClick={handleClick} />
+            )}
           </NavBarSwitch>
         </NavBarLinks>
       </NavBarSize>

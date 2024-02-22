@@ -51,7 +51,6 @@ export const InfoContainer = styled.div`
 `;
 
 export const CustomButtom = styled.button`
-  ${'' /* margin-top: 100px; */}
   color: #eee;
   background-color: ${({ theme }) => theme.text};
   font-family: "Roboto";
