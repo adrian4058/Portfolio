@@ -4,9 +4,15 @@ import {
   CoverContainer,
   CoverWrapper,
   InfoContainer,
-  CustomButtom,
+  Docs,
+  ProfilePicture,
+  InfoProfile,
+  CV,
+  Portfolio,
 } from "./Cover.elements";
 import { BsSun, BsMoon } from "react-icons/bs";
+import { FaSheetPlastic } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
@@ -17,10 +23,20 @@ const Cover = ({ theme, setTheme }) => {
         <Navbar icono={icono} theme={theme} setTheme={setTheme} />
         <CoverWrapper>
           <InfoContainer>
-            {icono}
-            <h1>Hello</h1>
-            <h1>Light Mode</h1>
-            <CustomButtom>Get Started</CustomButtom>
+            <ProfilePicture src="/src/assets/profile_picture.jpeg" />
+            <InfoProfile>
+              <h2>Hola, soy Adrián 👋</h2>
+              <h1>Desarrollador Full-Stack</h1>
+              <p>Soy tremendamente crack</p>
+              <Docs>
+                <CV href="src/assets/CV_PerezAdrian.pdf" target="_blank">
+                  Curriculum <FaSheetPlastic className="sheetPlastic" />
+                </CV>
+                <Portfolio>
+                  Portafolio <FaArrowRight className="animatedArrow" />
+                </Portfolio>
+              </Docs>
+            </InfoProfile>
           </InfoContainer>
         </CoverWrapper>
       </CoverContainer>

@@ -14,10 +14,12 @@ const DarkTheme = {
   primary: "#00B5E8",
   toggle: "#0085ff",
   hover: "#00d4ff",
-  bgc: "#23374d",
+  bgc: "#000b1a",
   bgcsecondary: "#001938",
   bgnavbar: "#000c1ce3",
   outline: "#00B5E8",
+  bgcimage:
+    "radial-gradient(at 0% 0%, hsla(222, 100%, 11%, 1) 0px, transparent 50%), radial-gradient(at 100% 100%, hsla(222, 100%, 11%, 1) 0px, transparent 50%);",
 };
 
 const Themes = {

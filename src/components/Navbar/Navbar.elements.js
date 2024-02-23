@@ -6,7 +6,7 @@ export const NavBarContainer = styled.header`
   justify-content: center;
   width: 100%;
   position: fixed;
-  height: 80px;
+  height: 5rem;
   background-color: ${({ theme }) => theme.bgnavbar};
   outline: 1px solid ${({ theme }) => theme.outline};
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
