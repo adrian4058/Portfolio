@@ -14,7 +14,8 @@ import {
   ListLinks,
   LinksNav,
 } from "./Navbar.elements";
-import { ImMenu3, ImMenu4 } from "react-icons/im";
+import { IoMdMenu } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 
 const Navbar = ({ theme, setTheme }) => {
   const [clicked, setClicked] = useState(false);
@@ -47,9 +48,9 @@ const Navbar = ({ theme, setTheme }) => {
           <NavBarSwitch>
             <Switch theme={theme} setTheme={setTheme} />
             {clicked ? (
-              <ImMenu4 className="Navbar__menu" onClick={handleClick} />
+              <MdClose className="Navbar__menu" onClick={handleClick} />
             ) : (
-              <ImMenu3 className="Navbar__menu" onClick={handleClick} />
+              <IoMdMenu className="Navbar__menu" onClick={handleClick} />
             )}
           </NavBarSwitch>
         </NavBarLinks>

@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const NavBarContainer = styled.header`
   display: flex;
+  position: absolute;
+  top: 0;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -56,7 +58,7 @@ export const NavBarSwitch = styled.div`
       display: none;
     }
     font-size: 2rem;
-    fill: ${({ theme }) => theme.text};
+    fill: ${({ theme }) => theme.text} !important;
     cursor: pointer;
     z-index: 3;
   }

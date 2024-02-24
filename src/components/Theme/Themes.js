@@ -3,10 +3,12 @@ const LightTheme = {
   primary: "#00B5E8",
   toggle: "#757575",
   hover: "#0085ff",
-  bgc: "#eee",
+  bgc: "#fff",
   bgcsecondary: "#F1F5F9",
   bgnavbar: "#ffffffe9",
   outline: "#e5e7eb",
+  bgabout: "#F1F5F9",
+  textabout: "#4B5563"
 };
 
 const DarkTheme = {
@@ -16,10 +18,12 @@ const DarkTheme = {
   hover: "#00d4ff",
   bgc: "#000b1a",
   bgcsecondary: "#001938",
-  bgnavbar: "#000c1ce3",
+  bgnavbar: "#000c1cf3",
   outline: "#00B5E8",
   bgcimage:
     "radial-gradient(at 0% 0%, hsla(222, 100%, 11%, 1) 0px, transparent 50%), radial-gradient(at 100% 100%, hsla(222, 100%, 11%, 1) 0px, transparent 50%);",
+  bgabout: "#001938",
+  textabout: "#D1D5DB"
 };
 
 const Themes = {

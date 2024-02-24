@@ -13,14 +13,14 @@ import {
 import { BsSun, BsMoon } from "react-icons/bs";
 import { FaSheetPlastic } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
+import About from "../About/About";
 
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
   let icono = theme === "light" ? <BsSun /> : <BsMoon />;
   return (
     <>
-      <CoverContainer>
-        <Navbar icono={icono} theme={theme} setTheme={setTheme} />
+      <CoverContainer id="home">
         <CoverWrapper>
           <InfoContainer>
             <ProfilePicture src="/src/assets/profile_picture.jpeg" />
@@ -39,6 +39,8 @@ const Cover = ({ theme, setTheme }) => {
             </InfoProfile>
           </InfoContainer>
         </CoverWrapper>
+        <About  />
+        <Navbar icono={icono} theme={theme} setTheme={setTheme} />
       </CoverContainer>
     </>
   );

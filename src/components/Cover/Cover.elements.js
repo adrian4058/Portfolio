@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 
 export const CoverContainer = styled.section`
   width: 100vw;
-  overflow-x: hidden;
   justify-content: center;
   position: relative;
   background-color: ${({ theme }) => theme.bgc};
@@ -106,7 +105,7 @@ export const Portfolio = styled.a`
   color: #eee;
   border: 1px solid ${({ theme }) => theme.primary};
   .animatedArrow {
-    animation: ${arrowAnimation} 1s ease infinite;
+    animation: ${arrowAnimation} 1s ease-out infinite;
   }
 `;
 
@@ -124,6 +123,9 @@ export const InfoProfile = styled.div`
     background: linear-gradient(to right, #00b5e8, #0085ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+  h2 {
+    font-weight: 400;
   }
   @media screen and (min-width: 720px) {
     align-items: start;
@@ -169,7 +171,7 @@ export const ProfilePicture = styled.img`
   width: 20rem;
   height: 21rem;
 
-  border: 7px solid ${({ theme }) => theme.primary};
+  border: 3px solid ${({ theme }) => theme.primary};
   border-radius: 50%;
   object-fit: cover;
   animation: ${borderAnimation} 6s infinite alternate ease-in-out;
