@@ -6,6 +6,11 @@ export const AboutSection = styled.section`
   justify-content: center;
   background-color: ${({ theme }) => theme.bgabout};
   padding: 5rem 0;
+  h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-decoration: underline;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -38,13 +43,67 @@ export const AboutEducation = styled.div`
 `;
 
 export const Education = styled.div`
+  padding-top: 3rem;
   div {
     display: flex;
-    width: 100;
+    width: 100%;
   }
-  h3 {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul li::marker {
     font-size: 1.5rem;
-    line-height: 2rem;
+    color: ${({ theme }) => theme.primary};
+  }
+  ul li {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+  ul li span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    opacity: 0.6;
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 720px) {
+    div {
+      flex-direction: column;
+    }
+    ul {
+      display: flex;
+      flex-wrap: no-wrap;
+    }
+    ul li {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      padding: 0.5rem 0;
+      margin: 0 0.5rem;
+      width: 40%;
+    }
+  }
+  @media screen and (min-width: 1050px) {
+    div {
+      flex-direction: column;
+    }
+    ul li {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      padding: 0.5rem 0;
+      margin: 0 0.5rem;
+      width: 48%;
+    }
+  }
+`;
+
+export const Experience = styled.div`
+  div {
+    display: flex;
+    flex-wrap: wrap;
   }
   ul li::marker {
     font-size: 1.5rem;
@@ -64,6 +123,13 @@ export const Education = styled.div`
     display: flex;
     flex-direction: column;
   }
+  ul li span u {
+    font-style: normal;
+  }
+  ul li span p {
+    font-style: normal;
+    padding: 1rem 0;
+  }
   @media screen and (max-width: 1050px) {
     div {
       flex-direction: column;
@@ -71,6 +137,11 @@ export const Education = styled.div`
   }
 `;
 
-export const Technologies = styled.div``;
+export const Technologies = styled.div`
+  padding-top: 3rem;
+  h3 {
+    padding-bottom: 1rem;
+  }
+`;
 
 export const Tools = styled.div``;

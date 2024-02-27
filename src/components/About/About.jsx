@@ -1,10 +1,20 @@
 import React from "react";
-import { AboutContent, AboutEducation, AboutMe, AboutSection, Education, Technologies } from "./About.elements";
+import {
+  AboutContent,
+  AboutEducation,
+  AboutMe,
+  AboutSection,
+  Education,
+  Experience,
+  Technologies,
+} from "./About.elements";
+import { educationInfo, experienceInfo } from "..";
+import SliderComponent from "../Slider/SliderComponent";
 
 const About = () => {
   return (
     <AboutSection>
-      <AboutContent >
+      <AboutContent>
         <AboutMe id="about">
           <h2>
             Acerca de mí
@@ -20,48 +30,49 @@ const About = () => {
           <br />
           <p>
             Actualmente, combino mis estudios en la Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios
-            web de la UNL con un trabajo remoto a tiempo parcial para Escrito Space utilizando{" "}
+            web de la UNL con un trabajo remoto a tiempo parcial para <u>Escrito Space</u> y <u>Smart Air</u> utilizando{" "}
             <span>Django, Next JS y Ant Design</span>. Desde que me sumergí en el mundo de la tecnología, he descubierto
             que las herramientas y tecnologías que utilizamos están en constante evolución. Esto me entusiasma a seguir
             aprendiendo cada día para mantenerme actualizado y aprovechar al máximo las nuevas oportunidades que surgen.
           </p>
         </AboutMe>
         <AboutEducation>
+          <Experience>
+            <h3>Experiencia profesional:</h3>
+            <div>
+              <ul>
+                {experienceInfo.map((experience, index) => (
+                  <li key={index}>
+                    {experience.position}
+                    <span>
+                      <u>{experience.company}</u>
+                      <p>{experience.detail}</p>
+                      <span>{experience.since}</span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Experience>
           <Education>
             <h3>Educación:</h3>
             <div>
               <ul>
-                <li>
-                  Tecnico Electromecánico
-                  <span>
-                    Escuela Educacion Tecnico Profesional 279<span>2013 - 2021</span>
-                  </span>
-                </li>
-                <li>
-                  Full Stack Web Developer
-                  <span>
-                    Soy Henry<span>2022-2023</span>
-                  </span>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  Ingeniería en informática
-                  <span>
-                    UNL<span>2022-2024</span>
-                  </span>
-                </li>
-                <li>
-                  Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios web
-                  <span>
-                    UNL<span>2024 - actualidad</span>
-                  </span>
-                </li>
+                {educationInfo.map((education, index) => (
+                  <li key={index}>
+                    {education.profession}
+                    <span>
+                      {education.institution}
+                      <span>{education.since}</span>
+                    </span>
+                  </li>
+                ))}
               </ul>
             </div>
           </Education>
           <Technologies>
-            <h3></h3>
+            <h3>Tecnologías: </h3>
+            <SliderComponent />
           </Technologies>
         </AboutEducation>
       </AboutContent>
