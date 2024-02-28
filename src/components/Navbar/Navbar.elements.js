@@ -6,7 +6,7 @@ export const NavBarContainer = styled.header`
   top: 0;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   height: 5rem;
   background-color: ${({ theme }) => theme.bgnavbar};
@@ -51,9 +51,11 @@ export const NavBarLinks = styled.nav`
 
 export const NavBarSwitch = styled.div`
   display: flex;
+  justify-content: end;
   align-items: center;
 
   .Navbar__menu {
+    margin-left: 1rem;
     @media screen and (min-width: 720px) {
       display: none;
     }

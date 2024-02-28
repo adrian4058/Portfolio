@@ -8,12 +8,12 @@ const SliderComponent = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 1500,
     arrows: false,
     slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 1000,
     cssEase: "linear",
     responsive: [
       {
@@ -51,17 +51,17 @@ const SliderComponent = () => {
   return (
     <div>
       <Slider {...settings}>
-        <ImgIcon src="/src/assets/icons/css.png" />
-        <ImgIcon src="/src/assets/icons/django.png" />
-        <ImgIcon src="/src/assets/icons/git.png" />
-        <ImgIcon src="/src/assets/icons/github.png" />
-        <ImgIcon src="/src/assets/icons/js.png" />
-        <ImgIcon src="/src/assets/icons/react.png" />
-        <ImgIcon src="/src/assets/icons/ts.png" />
-        <ImgIcon src="/src/assets/icons/nextjs.webp" />
-        <ImgIcon src="/src/assets/icons/Tailwind.png" />
         <ImgIcon src="/src/assets/icons/node.png" />
         <ImgIcon src="/src/assets/icons/python.png" />
+        <ImgIcon src="/src/assets/icons/django.png" />
+        <ImgIcon src="/src/assets/icons/js.png" />
+        <ImgIcon src="/src/assets/icons/ts.png" />
+        <ImgIcon src="/src/assets/icons/react.png" />
+        <ImgIcon src="/src/assets/icons/nextjs.webp" />
+        <ImgIcon src="/src/assets/icons/Tailwind.png" />
+        <ImgIcon src="/src/assets/icons/css.png" />
+        <ImgIcon src="/src/assets/icons/git.png" />
+        <ImgIcon src="/src/assets/icons/github.png" />
       </Slider>
     </div>
   );

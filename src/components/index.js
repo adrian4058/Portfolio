@@ -30,7 +30,6 @@ export const experienceInfo = [
     since: "Feb. 2024 - Presente",
     company: "Smart Air",
     // detail:
-    //   "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
   },
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
@@ -52,5 +51,33 @@ export const experienceInfo = [
     company: "Alas Empresa Junior",
     detail:
       "Trabajo en organización sin fines de lucro en TIC, brindando soluciones informáticas, soporte web y gestión de correo.",
+  },
+];
+
+export const projectsInfo = [
+  {
+    title: "BooksStore",
+    detail: "App bajo metodología SCRUM, construida con Node.js, React.js y CSS",
+    linkcode: "https://github.com/adrian4058/HenryBooks",
+    linkdemo:
+      "https://www.linkedin.com/posts/adrian4058_react-javascript-node-activity-7087177762955784193-3w1E?utm_source=share&utm_medium=member_desktop",
+    img: "/src/assets/booksproject.png",
+  },
+
+  {
+    title: "Gestoría Adriana",
+    detail: "Single Page Application hecha de manera freelance, construida con TypesSript, React y Tailwind",
+    linkcode: "https://github.com/adrian4058/Gestoria",
+    linkdemo:
+      "https://www.linkedin.com/posts/adrian4058_freelance-softwaredelevoper-netlify-activity-7092197262260396032-VQVB?utm_source=share&utm_medium=member_desktop",
+    img: "/src/assets/gestoria.png",
+  },
+  {
+    title: "Pokemon App",
+    detail: "Single Page Application, construida con Node.js, React.js y CSS",
+    linkcode: "https://github.com/adrian4058/ProyectoPokemon",
+    linkdemo:
+      "https://www.linkedin.com/posts/adrian4058_javascript-react-redux-activity-7047231593916043264-phlf?utm_source=share&utm_medium=member_desktop",
+    img: "/src/assets/pokeproject.png",
   },
 ];

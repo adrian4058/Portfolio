@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
   width: 70px;
-  margin: 0 0.5rem;
+  ${'' /* margin: 0 0.5rem; */}
   transition: 0.5s all ease-in;
 `;
 
 export const SwitchWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: end;
   width: 100%;
   max-width: 80px;
 `;

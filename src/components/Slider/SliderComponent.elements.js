@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ImgIcon = styled.img`
-  max-width: 7vh;
-  height: 7vh;
+  max-width: 3rem;
+  height: 3rem;
   object-fit: contain;
 
   @media screen and (min-width: 1050px) {

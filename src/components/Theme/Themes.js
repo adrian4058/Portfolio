@@ -8,7 +8,8 @@ const LightTheme = {
   bgnavbar: "#ffffffe9",
   outline: "#e5e7eb",
   bgabout: "#F1F5F9",
-  textabout: "#4B5563"
+  textabout: "#4B5563",
+  bgcard: "#E5E7EB",
 };
 
 const DarkTheme = {
@@ -23,7 +24,8 @@ const DarkTheme = {
   bgcimage:
     "radial-gradient(at 0% 0%, hsla(222, 100%, 11%, 1) 0px, transparent 50%), radial-gradient(at 100% 100%, hsla(222, 100%, 11%, 1) 0px, transparent 50%);",
   bgabout: "#001938",
-  textabout: "#D1D5DB"
+  textabout: "#D1D5DB",
+  bgcard: "#001938",
 };
 
 const Themes = {
