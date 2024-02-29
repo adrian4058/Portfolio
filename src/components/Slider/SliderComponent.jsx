@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { ImgIcon } from "./SliderComponent.elements";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import github from "../../assets/icons";
 
 const SliderComponent = () => {
   const settings = {
@@ -51,17 +52,17 @@ const SliderComponent = () => {
   return (
     <div>
       <Slider {...settings}>
-        <ImgIcon src="/src/assets/icons/node.png" />
-        <ImgIcon src="/src/assets/icons/python.png" />
-        <ImgIcon src="/src/assets/icons/django.png" />
-        <ImgIcon src="/src/assets/icons/js.png" />
-        <ImgIcon src="/src/assets/icons/ts.png" />
-        <ImgIcon src="/src/assets/icons/react.png" />
-        <ImgIcon src="/src/assets/icons/nextjs.webp" />
-        <ImgIcon src="/src/assets/icons/Tailwind.png" />
-        <ImgIcon src="/src/assets/icons/css.png" />
-        <ImgIcon src="/src/assets/icons/git.png" />
-        <ImgIcon src="/src/assets/icons/github.png" />
+        <ImgIcon src="../../assets/icons/node.png" />
+        <ImgIcon src="../../assets/icons/python.png" />
+        <ImgIcon src="../../assets/icons/django.png" />
+        <ImgIcon src="../../assets/icons/js.png" />
+        <ImgIcon src="../../assets/icons/ts.png" />
+        <ImgIcon src="../../assets/icons/react.png" />
+        <ImgIcon src="../../assets/icons/nextjs.webp" />
+        <ImgIcon src="../../assets/icons/Tailwind.png" />
+        <ImgIcon src="../../assets/icons/css.png" />
+        <ImgIcon src="../../assets/icons/git.png" />
+        <ImgIcon src="../../assets/icons/github.png" />
       </Slider>
     </div>
   );
