@@ -22,8 +22,9 @@ export const NavBarSize = styled.div`
   max-width: 1000px;
 `;
 
-export const NavBarLogos = styled.div`
+export const NavBarLogos = styled.a`
   display: flex;
+  cursor: pointer;
 `;
 
 export const LogoName = styled.a`

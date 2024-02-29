@@ -33,7 +33,7 @@ const Navbar = ({ theme, setTheme }) => {
   return (
     <NavBarContainer>
       <NavBarSize>
-        <NavBarLogos>
+        <NavBarLogos href="#home">
           <LogoName>AJPerez</LogoName>
           <PuntoDetail>.</PuntoDetail>
         </NavBarLogos>

@@ -10,6 +10,9 @@ const LightTheme = {
   bgabout: "#F1F5F9",
   textabout: "#4B5563",
   bgcard: "#E5E7EB",
+  bgform: "#FFFFFF",
+  bcolorinput: "rgb(226 232 240 / 1)",
+  
 };
 
 const DarkTheme = {
@@ -26,6 +29,8 @@ const DarkTheme = {
   bgabout: "#001938",
   textabout: "#D1D5DB",
   bgcard: "#001938",
+  bgform: "#000C1C",
+  bcolorinput: "rgb(12 74 110 / 1)",
 };
 
 const Themes = {

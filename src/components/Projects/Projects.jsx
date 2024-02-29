@@ -5,7 +5,7 @@ import { projectsInfo } from "..";
 
 const Projects = () => {
   return (
-    <ProjectsSection>
+    <ProjectsSection id="project">
       <ProjectsContent>
         <h2>
           Proyectos

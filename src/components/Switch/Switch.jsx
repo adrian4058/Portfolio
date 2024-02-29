@@ -23,7 +23,6 @@ const Switch = ({ theme, setTheme }) => {
     setPosition(!position);
   };
   let icono = theme === "light" ? <BsSun /> : <BsMoon />;
-  console.log(icono);
 
   return (
     <>

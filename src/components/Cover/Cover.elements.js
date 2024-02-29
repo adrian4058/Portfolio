@@ -94,7 +94,6 @@ const arrowAnimation = keyframes`
 
 export const Portfolio = styled.a`
   display: flex;
-  ${"" /* width: 30%; */}
   cursor: pointer;
   background: ${({ theme }) => theme.primary};
   justify-content: space-between;

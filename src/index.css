@@ -25,4 +25,6 @@ a {
   text-decoration: none;
 }
 
-
+#about {
+  scroll-margin-top: 10ex;
+}

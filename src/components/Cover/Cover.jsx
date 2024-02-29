@@ -15,6 +15,8 @@ import { FaSheetPlastic } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import About from "../About/About";
 import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
@@ -28,12 +30,11 @@ const Cover = ({ theme, setTheme }) => {
             <InfoProfile>
               <h2>Hola, soy Adrián 👋</h2>
               <h1>Desarrollador Full-Stack</h1>
-              <p>Soy tremendamente crack, los que conocen saben</p>
               <Docs>
                 <CV href="src/assets/CV_PerezAdrian.pdf" target="_blank">
                   Curriculum <FaSheetPlastic className="sheetPlastic" />
                 </CV>
-                <Portfolio>
+                <Portfolio href="#project">
                   Portafolio <FaArrowRight className="animatedArrow" />
                 </Portfolio>
               </Docs>
@@ -42,6 +43,8 @@ const Cover = ({ theme, setTheme }) => {
         </CoverWrapper>
         <About />
         <Projects />
+        <Contact />
+        <Footer />
         <Navbar icono={icono} theme={theme} setTheme={setTheme} />
       </CoverContainer>
     </>
