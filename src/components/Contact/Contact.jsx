@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 import {
   ContactContent,
   ContactData,
@@ -19,6 +20,13 @@ import contactImage from "../../assets/contact.svg";
 const Contact = () => {
   const form = useRef();
 
+  const notifySuccess = () => toast.success("¡Mensaje enviado con éxito!");
+  const notifyError = () => toast.error("Error al enviar el mensaje.");
+
+  const clearForm = () => {
+    form.current.reset();
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,12 +37,17 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          notifySuccess();
+          clearForm();
         },
         (error) => {
           console.log("FAILED...", error.text);
+          notifyError();
+          clearForm();
         }
       );
   };
+
   return (
     <ContactSection id="contact">
       <ContactContent>
@@ -83,6 +96,7 @@ const Contact = () => {
           </ContactPersonalInfo>
         </FormAndContactInfo>
       </ContactContent>
+      <Toaster />
     </ContactSection>
   );
 };
