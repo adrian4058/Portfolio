@@ -23,7 +23,7 @@ export const educationInfo = [
   {
     profession: "Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios web",
     institution: "UNL",
-    since: "2024 - actualidad",
+    since: "2024 - Presente",
   },
 ];
 
@@ -43,7 +43,7 @@ export const experienceInfo = [
   },
   {
     position: "Desarrollador Front-End - Contrato temporal",
-    since: "Ago. 23 - Feb. 2024",
+    since: "Ago. 23 - Sep. 23",
     company: "iCreativa Digital",
     detail:
       "Parte del equipo de desarrollo, enfocado en diseño de aplicación web con React, CSS y GSAP. Participación en reuniones diarias para revisar progreso y superar desafíos.",

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import {
@@ -19,6 +19,7 @@ import contactImage from "../../assets/contact.svg";
 
 const Contact = () => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
   const notifySuccess = () => toast.success("¡Mensaje enviado con éxito!");
   const notifyError = () => toast.error("Error al enviar el mensaje.");
@@ -29,6 +30,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm("service_prwagzq", "template_h5h6iyp", form.current, {
@@ -43,9 +45,11 @@ const Contact = () => {
         (error) => {
           console.log("FAILED...", error.text);
           notifyError();
-          clearForm();
         }
-      );
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
@@ -61,18 +65,18 @@ const Contact = () => {
           <FormContent ref={form} onSubmit={sendEmail}>
             <FormInputLabel>
               <label>Tu nombre:</label>
-              <input type="text" name="user_name" placeholder="Escribe tu nombre" />
+              <input required type="text" name="user_name" placeholder="Escribe tu nombre" />
             </FormInputLabel>
             <FormInputLabel>
               <label>Tu correo:</label>
-              <input type="email" name="user_email" placeholder="Escribe tu correo" />
+              <input required type="email" name="user_email" placeholder="Escribe tu correo" />
             </FormInputLabel>
             <FormInputLabel>
               <label>Tu Mensaje:</label>
-              <textarea name="message" placeholder="Escribe tu mensaje aquí" />
+              <textarea required name="message" placeholder="Escribe tu mensaje aquí" />
             </FormInputLabel>
-            <button type="submit" value="Send">
-              Enviar
+            <button type="submit" disabled={isSending}>
+              {isSending ? "Enviando..." : "Enviar"}
             </button>
           </FormContent>
           <ContactPersonalInfo>
