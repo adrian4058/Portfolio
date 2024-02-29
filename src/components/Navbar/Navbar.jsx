@@ -41,7 +41,9 @@ const Navbar = ({ theme, setTheme }) => {
           <LinksButtons className={`${clicked ? "active" : ""}`}>
             {Links.map((link, index) => (
               <ListLinks key={index}>
-                <LinksNav href={link.link}>{link.name}</LinksNav>
+                <LinksNav onClick={handleClick} href={link.link}>
+                  {link.name}
+                </LinksNav>
               </ListLinks>
             ))}
           </LinksButtons>
