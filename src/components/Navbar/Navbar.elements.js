@@ -27,20 +27,10 @@ export const NavBarLogos = styled.a`
   cursor: pointer;
 `;
 
-export const LogoName = styled.a`
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text};
-  font-family: "Shadows Into Light", cursive;
-  &:hover {
-    color: ${({ theme }) => theme.text};
-  }
-`;
-
-export const PuntoDetail = styled.h1`
-    margin: 0
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: ${({ theme }) => theme.hover}
+export const LogoName = styled.img`
+  width: 8.5rem;
+  ${'' /* aspect-ratio: 1.3; */}
+  object-fit: contain;
 `;
 
 export const NavBarLinks = styled.nav`

@@ -9,13 +9,14 @@ import {
   NavBarLogos,
   NavBarSize,
   NavBarSwitch,
-  PuntoDetail,
   LinksButtons,
   ListLinks,
   LinksNav,
 } from "./Navbar.elements";
 import { IoMdMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
+import logoblanco from "../../assets/logoblanco.png";
+import logonegro from "../../assets/logo.png";
 
 const Navbar = ({ theme, setTheme }) => {
   const [clicked, setClicked] = useState(false);
@@ -30,12 +31,15 @@ const Navbar = ({ theme, setTheme }) => {
     { name: "Logros", link: "#project" },
     { name: "Contacto", link: "#contact" },
   ];
+
+  let logo = theme === "light" ? logonegro : logoblanco;
+
   return (
     <NavBarContainer>
       <NavBarSize>
         <NavBarLogos href="#home">
-          <LogoName>AJPerez</LogoName>
-          <PuntoDetail>.</PuntoDetail>
+          <LogoName src={logo} />
+          
         </NavBarLogos>
         <NavBarLinks>
           <LinksButtons className={`${clicked ? "active" : ""}`}>
