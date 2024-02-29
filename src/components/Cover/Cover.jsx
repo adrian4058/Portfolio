@@ -17,6 +17,7 @@ import About from "../About/About";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
+import profile_picture from "../../assets/profile_picture.jpeg";
 
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
@@ -26,7 +27,7 @@ const Cover = ({ theme, setTheme }) => {
       <CoverContainer id="home">
         <CoverWrapper>
           <InfoContainer>
-            <ProfilePicture src="/src/assets/profile_picture.jpeg" />
+            <ProfilePicture src={profile_picture} />
             <InfoProfile>
               <h2>Hola, soy Adrián 👋</h2>
               <h1>Desarrollador Full-Stack</h1>
