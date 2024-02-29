@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import { ImgIcon } from "./SliderComponent.elements";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import github from "../../assets/icons";
 
 const SliderComponent = () => {
   const settings = {
