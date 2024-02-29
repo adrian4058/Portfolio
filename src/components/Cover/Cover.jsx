@@ -18,6 +18,7 @@ import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import profile_picture from "../../assets/profile_picture.jpeg";
+import CV_PerezAdrian from "../../assets/CV_PerezAdrian.pdf";
 
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
@@ -32,7 +33,7 @@ const Cover = ({ theme, setTheme }) => {
               <h2>Hola, soy Adrián 👋</h2>
               <h1>Desarrollador Full-Stack</h1>
               <Docs>
-                <CV href="src/assets/CV_PerezAdrian.pdf" target="_blank">
+                <CV href={CV_PerezAdrian} target="_blank">
                   Curriculum <FaSheetPlastic className="sheetPlastic" />
                 </CV>
                 <Portfolio href="#project">

@@ -14,6 +14,7 @@ import {
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import contactImage from "../../assets/contact.svg";
 
 const Contact = () => {
   const form = useRef();
@@ -62,7 +63,7 @@ const Contact = () => {
             </button>
           </FormContent>
           <ContactPersonalInfo>
-            <img src="/src/assets/contact.svg"></img>
+            <img src={contactImage} alt="Contact" />
             <ContactData>
               <a href="mailto:adrian_2016_@outlook.es">
                 <MdOutlineEmail /> adrian_2016_@outlook.es

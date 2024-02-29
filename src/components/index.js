@@ -1,5 +1,8 @@
 export { default as Cover } from "./Cover/Cover";
 export { default as Themes } from "./Theme/Themes";
+import booksproject from "../assets/booksproject.png";
+import gestoria from "../assets/gestoria.png";
+import pokeproject from "../assets/pokeproject.png";
 
 export const educationInfo = [
   {
@@ -61,16 +64,15 @@ export const projectsInfo = [
     linkcode: "https://github.com/adrian4058/HenryBooks",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_react-javascript-node-activity-7087177762955784193-3w1E?utm_source=share&utm_medium=member_desktop",
-    img: "/src/assets/booksproject.png",
+    img: booksproject,
   },
-
   {
     title: "Gestoría Adriana",
     detail: "Single Page Application hecha de manera freelance, construida con TypesSript, React y Tailwind",
     linkcode: "https://github.com/adrian4058/Gestoria",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_freelance-softwaredelevoper-netlify-activity-7092197262260396032-VQVB?utm_source=share&utm_medium=member_desktop",
-    img: "/src/assets/gestoria.png",
+    img: gestoria,
   },
   {
     title: "Pokemon App",
@@ -78,6 +80,6 @@ export const projectsInfo = [
     linkcode: "https://github.com/adrian4058/ProyectoPokemon",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_javascript-react-redux-activity-7047231593916043264-phlf?utm_source=share&utm_medium=member_desktop",
-    img: "/src/assets/pokeproject.png",
+    img: pokeproject,
   },
 ];
