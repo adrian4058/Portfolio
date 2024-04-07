@@ -32,11 +32,11 @@ export const experienceInfo = [
     position: "Desarrollador Full-Stack - Tiempo Parcial",
     since: "Feb. 2024 - Presente",
     company: "Smart Air",
-    // detail:
+    detail: "Colaboro en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air."
   },
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
-    since: "Oct. 2023 - Presente",
+    since: "Oct. 2023 - Mar. 2024",
     company: "Escrito Space",
     detail:
       "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
