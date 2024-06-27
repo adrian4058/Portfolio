@@ -31,7 +31,7 @@ const About = () => {
           <p>
             Actualmente, combino mis estudios en la Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios
             web de la UNL con un trabajo remoto a tiempo parcial para <u>Smart Air</u> utilizando{" "}
-            <span>TypeScipt, Django, Next JS y MUI Components</span>. Desde que me sumergí en el mundo de la tecnología, he
+            <span>TypeScript, Django, Next JS y MUI Components</span>. Desde que me sumergí en el mundo de la tecnología, he
             descubierto que las herramientas y tecnologías que utilizamos están en constante evolución. Esto me
             entusiasma a seguir aprendiendo cada día para mantenerme actualizado y aprovechar al máximo las nuevas
             oportunidades que surgen.
