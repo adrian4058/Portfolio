@@ -32,7 +32,8 @@ export const experienceInfo = [
     position: "Desarrollador Full-Stack - Tiempo Parcial",
     since: "Feb. 2024 - Presente",
     company: "Smart Air",
-    detail: "Colaboro en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air."
+    detail:
+      "Colaboro en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilizo la plataforma Qinping para el monitoreo de calidad del aire y la aplicación eWeLink para el control remoto de los dispositivos. Además, he implementado un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros",
   },
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
