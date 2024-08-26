@@ -3,6 +3,7 @@ export { default as Themes } from "./Theme/Themes";
 import booksproject from "../assets/booksproject.png";
 import gestoria from "../assets/gestoria.png";
 import pokeproject from "../assets/pokeproject.png";
+import mivete from "../assets/mivete.png";
 
 export const educationInfo = [
   {
@@ -30,10 +31,10 @@ export const educationInfo = [
 export const experienceInfo = [
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
-    since: "Feb. 2024 - Presente",
+    since: "Feb. 2024 - Ago. 2024",
     company: "Smart Air",
     detail:
-      "Colaboro en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilizo la plataforma Qinping para el monitoreo de calidad del aire y la aplicación eWeLink para el control remoto de los dispositivos. Además, he implementado un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros",
+      "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y la aplicaciónes de eWeLink y Smarthings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
   },
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
@@ -59,6 +60,14 @@ export const experienceInfo = [
 ];
 
 export const projectsInfo = [
+  {
+    title: "Mi Vete",
+    detail:
+      "App bajo modalidad freelance, construida con Node.js, SQL, React.js, MUI y Twilio para el envio de SMS a los clientes",
+    linkcode: null,
+    linkdemo: "https://www.linkedin.com/posts/adrian4058_buenas-gente-como-andan-hoy-les-quiero-activity-7233837580595720192-7qtg?utm_source=share&utm_medium=member_desktop",
+    img: mivete,
+  },
   {
     title: "BooksStore",
     detail: "App bajo metodología SCRUM, construida con Node.js, React.js y CSS",

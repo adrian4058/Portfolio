@@ -11,9 +11,11 @@ const Card = ({ project }) => {
         <h3>{project.title}</h3>
         <p>{project.detail}</p>
         <CardLinks>
-          <CodeLink href={project.linkcode} target="_blank">
-            Código <FaGithub />
-          </CodeLink>
+          {project.linkcode !== null && (
+            <CodeLink href={project.linkcode} target="_blank">
+              Código <FaGithub />
+            </CodeLink>
+          )}
           <DemoLink href={project.linkdemo} target="_blank">
             Demo <FaArrowUpRightFromSquare />
           </DemoLink>
