@@ -8,7 +8,10 @@ const Card = ({ project }) => {
     <CardContainer>
       <CardImg src={project.img} />
       <CardInfo>
-        <h3>{project.title}</h3>
+        <h3>
+          {project.title}
+          <br />
+        </h3>
         <p>{project.detail}</p>
         <CardLinks>
           {project.linkcode !== null && (

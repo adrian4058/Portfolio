@@ -12,6 +12,8 @@ import react from "../../assets/icons/react.png";
 import nextjs from "../../assets/icons/nextjs.webp";
 import tailwind from "../../assets/icons/Tailwind.png";
 import css from "../../assets/icons/css.png";
+import mui from "../../assets/icons/mui.png";
+import boot from "../../assets/icons/boot.png";
 import git from "../../assets/icons/git.png";
 import github from "../../assets/icons/github.png";
 
@@ -71,6 +73,8 @@ const SliderComponent = () => {
         <ImgIcon src={nextjs} />
         <ImgIcon src={tailwind} />
         <ImgIcon src={css} />
+        <ImgIcon src={mui} />
+        <ImgIcon src={boot} />
         <ImgIcon src={git} />
         <ImgIcon src={github} />
       </Slider>

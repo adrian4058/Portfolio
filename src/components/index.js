@@ -4,6 +4,7 @@ import booksproject from "../assets/booksproject.png";
 import gestoria from "../assets/gestoria.png";
 import pokeproject from "../assets/pokeproject.png";
 import mivete from "../assets/mivete.png";
+import muchiutti from "../assets/muchiutti.png";
 
 export const educationInfo = [
   {
@@ -27,7 +28,6 @@ export const educationInfo = [
     since: "2024 - Presente",
   },
 ];
-
 export const experienceInfo = [
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
@@ -61,11 +61,20 @@ export const experienceInfo = [
 
 export const projectsInfo = [
   {
+    title: "Muchiutti Representaciones (en desarrollo)",
+    detail:
+      "App bajo modalidad freelance, construida con React.js, Bootstrap y Email JS para el envio de mails para contacto",
+    linkcode: null,
+    linkdemo: "https://muchiutti-representaciones.com",
+    img: muchiutti,
+  },
+  {
     title: "Mi Vete",
     detail:
       "App bajo modalidad freelance, construida con Node.js, SQL, React.js, MUI y Twilio para el envio de SMS a los clientes",
     linkcode: null,
-    linkdemo: "https://www.linkedin.com/posts/adrian4058_buenas-gente-como-andan-hoy-les-quiero-activity-7233837580595720192-7qtg?utm_source=share&utm_medium=member_desktop",
+    linkdemo:
+      "https://www.linkedin.com/posts/adrian4058_buenas-gente-como-andan-hoy-les-quiero-activity-7233837580595720192-7qtg?utm_source=share&utm_medium=member_desktop",
     img: mivete,
   },
   {

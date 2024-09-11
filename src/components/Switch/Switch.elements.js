@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
-  width: 70px;
-  ${'' /* margin: 0 0.5rem; */}
   transition: 0.5s all ease-in;
 `;
 
@@ -26,14 +24,18 @@ export const ButtonSwitch = styled.button`
   position: absolute;
   cursor: pointer;
   bottom: 4.5px;
-  left: ${({ position }) => (position ? "10px" : "-12px")};
-  width: 50px;
+  width: 45px;
   height: 15px;
   border: none;
   background: none;
   outline: none;
   transition: 0.4s all ease-in;
+  left: ${({ position }) => (position ? "5px" : "-5px")};
+
   svg {
+    position: relative;
+    transition: transform 0.4s all ease-in;
+    left: ${({ position }) => (position ? "5px" : "-5px")};
     fill: #fff;
   }
   padding: 0;

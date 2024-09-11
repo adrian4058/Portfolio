@@ -16,7 +16,7 @@ export const CardContainer = styled.div`
 export const CardImg = styled.img`
   border-radius: 0.75rem 0.75rem 0 0;
   width: 100%;
-  height: 50vh;
+  height: 50vh !important;
   object-fit: Cover;
   object-position: top;
 `;
@@ -31,7 +31,7 @@ export const CardInfo = styled.div`
   padding: 1.25rem;
   h3 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 2rem;
     color: ${({ theme }) => theme.primary};
   }
