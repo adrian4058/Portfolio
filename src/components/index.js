@@ -12,11 +12,11 @@ export const educationInfo = [
     institution: "Escuela Educacion Tecnico Profesional 279",
     since: "2013 - 2021",
   },
-  {
-    profession: "Full Stack Web Developer",
-    institution: "Soy Henry",
-    since: "2022-2023",
-  },
+  // {
+  //   profession: "Full Stack Web Developer",
+  //   institution: "Soy Henry",
+  //   since: "2022-2023",
+  // },
   {
     profession: "Ingeniería en informática",
     institution: "UNL",
@@ -30,11 +30,18 @@ export const educationInfo = [
 ];
 export const experienceInfo = [
   {
+    position: "Desarrollador Web - Tiempo Completo",
+    since: "Oct. 2024 - Actualidad",
+    company: "EasyLife Marketing",
+    detail:
+      "Trabajo en el desarrollo y mantenimiento de sitios web utilizando WordPress, HubSpot y CSS. Participo en reuniones diarias bajo la metodología ágil Scrum, colaborando en la optimización de estrategias de marketing digital y automatización de procesos.",
+  },
+  {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
     since: "Feb. 2024 - Ago. 2024",
     company: "Smart Air",
     detail:
-      "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y la aplicaciónes de eWeLink y Smarthings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
+      "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y las aplicaciones de eWeLink y SmartThings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
   },
   {
     position: "Desarrollador Full-Stack - Tiempo Parcial",
@@ -61,7 +68,7 @@ export const experienceInfo = [
 
 export const projectsInfo = [
   {
-    title: "Muchiutti Representaciones (en desarrollo)",
+    title: "Muchiutti Representaciones",
     detail:
       "App bajo modalidad freelance, construida con React.js, Bootstrap y Email JS para el envio de mails para contacto",
     linkcode: null,
@@ -80,7 +87,7 @@ export const projectsInfo = [
   {
     title: "BooksStore",
     detail: "App bajo metodología SCRUM, construida con Node.js, React.js y CSS",
-    linkcode: "https://github.com/adrian4058/HenryBooks",
+    linkcode: "https://github.com/adrian4058/Books",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_react-javascript-node-activity-7087177762955784193-3w1E?utm_source=share&utm_medium=member_desktop",
     img: booksproject,

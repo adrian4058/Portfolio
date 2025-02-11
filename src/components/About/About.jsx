@@ -29,12 +29,12 @@ const About = () => {
           </p>
           <br />
           <p>
-            Combino mis estudios en la Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios web de la UNL
-            con la experiencia adquirida durante mi trabajo remoto a tiempo parcial para <u>Smart Air</u>, donde trabajé
-            con <span>TypeScript, Django, Next.js y MUI Components</span>. Desde que me sumergí en el mundo de la
-            tecnología, descubrí que las herramientas y tecnologías que utilizamos están en constante evolución. Esto me
-            entusiasmó a seguir aprendiendo cada día para mantenerme actualizado y aprovechar al máximo las nuevas
-            oportunidades que surgen.
+            Combino mis estudios en la Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios Web de la UNL
+            con la experiencia adquirida durante mi trabajo en <u>EasyLife Marketing</u>, donde participo en reuniones
+            diarias bajo la metodología ágil Scrum y trabajo diariamente con <span>WordPress, HubSpot y CSS</span>.
+            Desde que me sumergí en el mundo de la tecnología, descubrí que las herramientas y tecnologías que
+            utilizamos están en constante evolución. Esto me motiva a seguir aprendiendo cada día para mantenerme
+            actualizado y aprovechar al máximo las nuevas oportunidades.
           </p>
         </AboutMe>
         <AboutEducation>
