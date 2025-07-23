@@ -67,6 +67,9 @@ const About = () => {
                     <span>
                       <u>{experience.company}</u>
                       <div className="experience-date">{experience.since}</div>
+                      {experience.location && (
+                        <div className="experience-location">{experience.location}</div>
+                      )}
                       <p>{experience.detail}</p>
                     </span>
                   </li>

@@ -33,13 +33,15 @@ export const experienceInfo = [
     position: "Desarrollador Web",
     since: "Oct. 2024 - Actualidad",
     company: "EasyLife Marketing",
+    location: "Canarias, España • En remoto",
     detail:
       "Trabajo en el desarrollo y mantenimiento de sitios web utilizando WordPress, HubSpot y CSS. Participo en reuniones diarias bajo la metodología ágil Scrum, colaborando en la optimización de estrategias de marketing digital y automatización de procesos.",
   },
   {
     position: "Desarrollador Full-Stack",
-    since: "Feb. 2024 - Ago. 2024",
+    since: "Mar. 2024 - Ago. 2024",
     company: "Smart Air",
+    location: "Hong Kong SAR, China • En remoto",
     detail:
       "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y las aplicaciones de eWeLink y SmartThings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
   },
@@ -47,20 +49,23 @@ export const experienceInfo = [
     position: "Desarrollador Full-Stack",
     since: "Oct. 2023 - Mar. 2024",
     company: "Escrito Space",
+    location: "En remoto",
     detail:
       "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django, ANT Design para los estilos y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
   },
   {
     position: "Desarrollador Front-End",
-    since: "Ago. 23 - Sep. 23",
+    since: "Ago. 2023 - Oct. 2023",
     company: "iCreativa Digital",
+    location: "Bogotá, Colombia • En remoto",
     detail:
       "Parte del equipo de desarrollo, enfocado en diseño de aplicación web con React, CSS y GSAP. Participación en reuniones diarias para revisar progreso y superar desafíos.",
   },
   {
-    position: "Desarrollador Front-End",
-    since: "May. 23 - Feb. 2024",
+    position: "Desarrollador de Software",
+    since: "May. 2023 - Feb. 2024",
     company: "Alas Empresa Junior",
+    location: "Santa Fe, Argentina • En remoto",
     detail:
       "Trabajo en organización sin fines de lucro en TIC, brindando soluciones informáticas, soporte web y gestión de correo.",
   },

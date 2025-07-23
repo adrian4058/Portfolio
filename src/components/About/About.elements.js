@@ -206,6 +206,15 @@ export const Experience = styled.div`
     font-style: normal;
   }
 
+  ul li span .experience-location {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: ${({ theme }) => theme.textabout};
+    margin-top: 0.125rem;
+    font-style: italic;
+    opacity: 0.8;
+  }
+
   @media screen and (max-width: 1050px) {
     ul::before {
       left: 15px;
@@ -276,6 +285,10 @@ export const Experience = styled.div`
 
     ul li span .experience-date {
       font-size: 0.8rem;
+    }
+
+    ul li span .experience-location {
+      font-size: 0.75rem;
     }
   }
 `;
