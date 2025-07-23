@@ -23,6 +23,37 @@ import CV_PerezAdrian from "../../assets/CV_PerezAdrian.pdf";
 // eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
   let icono = theme === "light" ? <BsSun /> : <BsMoon />;
+
+  const handlePortfolioClick = (e) => {
+    e.preventDefault();
+    const element = document.getElementById("project");
+    if (element) {
+      const navbarHeight = 80;
+      const elementPosition = element.offsetTop - navbarHeight;
+      const startPosition = window.pageYOffset;
+      const distance = elementPosition - startPosition;
+      const duration = Math.min(Math.abs(distance) * 0.5, 1200);
+      let startTime = null;
+
+      const animation = (currentTime) => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        // Función de easing más suave (ease-out-cubic)
+        const ease = 1 - Math.pow(1 - progress, 3);
+
+        window.scrollTo(0, startPosition + distance * ease);
+
+        if (progress < 1) {
+          requestAnimationFrame(animation);
+        }
+      };
+
+      requestAnimationFrame(animation);
+    }
+  };
+
   return (
     <>
       <CoverContainer id="home">
@@ -36,7 +67,7 @@ const Cover = ({ theme, setTheme }) => {
                 <CV href={CV_PerezAdrian} target="_blank">
                   Curriculum <FaSheetPlastic className="sheetPlastic" />
                 </CV>
-                <Portfolio href="#project">
+                <Portfolio onClick={handlePortfolioClick} style={{ cursor: "pointer" }}>
                   Portafolio <FaArrowRight className="animatedArrow" />
                 </Portfolio>
               </Docs>

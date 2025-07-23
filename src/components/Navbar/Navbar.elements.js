@@ -29,7 +29,7 @@ export const NavBarLogos = styled.a`
 
 export const LogoName = styled.img`
   width: 8.5rem;
-  ${'' /* aspect-ratio: 1.3; */}
+  ${"" /* aspect-ratio: 1.3; */}
   object-fit: contain;
 `;
 
@@ -93,7 +93,72 @@ export const ListLinks = styled.li`
 
 export const LinksNav = styled.a`
   color: ${({ theme }) => theme.text};
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+
   &:hover {
     color: ${({ theme }) => theme.hover};
+  }
+
+  &.active {
+    color: ${({ theme }) => theme.primary};
+    font-weight: 600;
+  }
+
+  &.active::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: ${({ theme }) => theme.primary};
+    border-radius: 2px;
+  }
+
+  @media screen and (max-width: 720px) {
+    &.active::after {
+      bottom: -4px;
+    }
+  }
+`;
+
+export const ScrollToTopButton = styled.button`
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: ${({ theme }) => theme.primary};
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px) scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  @media screen and (max-width: 768px) {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1rem;
   }
 `;

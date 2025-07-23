@@ -14,7 +14,8 @@ import {
 } from "./Contact.elements";
 import { MdOutlineEmail } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { BsTelephone } from "react-icons/bs";
 import contactImage from "../../assets/contact.svg";
 
 const Contact = () => {
@@ -84,6 +85,12 @@ const Contact = () => {
             <ContactData>
               <a href="mailto:adrian_2016_@outlook.es">
                 <MdOutlineEmail /> adrian_2016_@outlook.es
+              </a>
+              <a href="tel:+5493493665512">
+                <BsTelephone /> +54 9 3493 665512
+              </a>
+              <a href="https://wa.me/5493493665512" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp /> WhatsApp
               </a>
               <p>
                 <CiLocationOn /> Sunchales - Santa Fe, 🇦🇷

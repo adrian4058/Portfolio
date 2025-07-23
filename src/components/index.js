@@ -70,42 +70,87 @@ export const projectsInfo = [
   {
     title: "Muchiutti Representaciones",
     detail:
-      "App bajo modalidad freelance, construida con React.js, Bootstrap y Email JS para el envio de mails para contacto",
+      "SPA corporativa para mostrar servicios de la empresa, descargar catálogos en PDF y facilitar el contacto. Incluye formulario de contacto con EmailJS, popup sticky para WhatsApp y generación de código QR.",
+    technologies: ["React", "Bootstrap", "EmailJS", "React Slick"],
+    category: "Freelance",
     linkcode: null,
     linkdemo: "https://muchiutti-representaciones.com",
     img: muchiutti,
+    features: [
+      "Formulario de contacto funcional",
+      "Popup sticky para WhatsApp",
+      "Descarga de catálogos PDF",
+      "Código QR para acceso rápido",
+    ],
   },
   {
     title: "Mi Vete",
     detail:
-      "App bajo modalidad freelance, construida con Node.js, SQL, React.js, MUI y Twilio para el envio de SMS a los clientes",
+      "Sistema de recompensas para veterinarias con gestión de estado moderna usando Zustand. Permite a clientes acumular puntos (10% del total en compras) convertibles en descuentos para consultas. Registro manual o desde panel admin con notificaciones SMS integradas. Actualmente cuenta con 500+ clientes registrados y procesa 300+ interacciones mensuales.",
+    technologies: ["React", "Node.js", "Express", "PostgreSQL", "MUI", "Twilio", "Zustand"],
+    category: "Freelance",
     linkcode: null,
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_buenas-gente-como-andan-hoy-les-quiero-activity-7233837580595720192-7qtg?utm_source=share&utm_medium=member_desktop",
     img: mivete,
+    features: [
+      "Sistema de puntos y recompensas",
+      "Panel administrativo completo",
+      "Gestión de estado con Zustand",
+      "Notificaciones SMS con Twilio",
+      "500+ clientes activos registrados",
+      "300+ interacciones mensuales",
+      "Interfaz amigable para adultos mayores",
+    ],
   },
   {
     title: "BooksStore",
-    detail: "App bajo metodología SCRUM, construida con Node.js, React.js y CSS",
+    detail:
+      "E-commerce completo de libros físicos y digitales desarrollado bajo metodología SCRUM. Implementa Redux para gestión de estado global, autenticación con Auth0, pasarela de pagos con MercadoPago, sistema de reseñas y panel administrativo completo.",
+    technologies: ["React", "Node.js", "Redux", "Redux Toolkit", "SQL", "CSS", "Auth0", "MercadoPago", "Nodemailer"],
+    category: "Proyecto Grupal",
     linkcode: "https://github.com/adrian4058/Books",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_react-javascript-node-activity-7087177762955784193-3w1E?utm_source=share&utm_medium=member_desktop",
     img: booksproject,
+    features: [
+      "E-commerce completo con carrito de compras",
+      "Gestión de estado global con Redux",
+      "Autenticación y autorización con Auth0",
+      "Pagos integrados con MercadoPago",
+      "Sistema de reseñas y calificaciones",
+      "Panel administrativo avanzado",
+      "ChatBot de soporte integrado",
+    ],
   },
   {
     title: "Gestoría Adriana",
-    detail: "Single Page Application hecha de manera freelance, construida con TypesSript, React y Tailwind",
+    detail:
+      "SPA responsiva para consultoría de gestoría del automotor. Integra mapas interactivos con React Leaflet para ubicar oficinas y sistema de consultas de presupuestos vía EmailJS.",
+    technologies: ["TypeScript", "React", "Tailwind CSS", "EmailJS", "React Leaflet"],
+    category: "Freelance",
     linkcode: "https://github.com/adrian4058/Gestoria",
-    linkdemo:
-      "https://www.linkedin.com/posts/adrian4058_freelance-softwaredelevoper-netlify-activity-7092197262260396032-VQVB?utm_source=share&utm_medium=member_desktop",
+    linkdemo: "https://gestoriaadriana.netlify.app",
     img: gestoria,
+    features: ["Diseño totalmente responsivo", "Mapas interactivos", "Consulta de presupuestos", "Optimización SEO"],
   },
   {
     title: "Pokemon App",
-    detail: "Single Page Application, construida con Node.js, React.js y CSS",
+    detail:
+      "Aplicación didáctica para explorar el mundo Pokémon con arquitectura Redux para manejo de estado complejo. API REST propia consumiendo PokeApi, con funcionalidades avanzadas de búsqueda, filtrado, ordenamiento y creación de personajes personalizados.",
+    technologies: ["React", "Node.js", "Redux", "Redux Toolkit", "SQL", "CSS"],
+    category: "Proyecto Individual",
     linkcode: "https://github.com/adrian4058/ProyectoPokemon",
     linkdemo:
       "https://www.linkedin.com/posts/adrian4058_javascript-react-redux-activity-7047231593916043264-phlf?utm_source=share&utm_medium=member_desktop",
     img: pokeproject,
+    features: [
+      "Arquitectura Redux para estado global",
+      "API REST propia consumiendo PokeApi",
+      "Búsqueda y filtros avanzados",
+      "Creación y edición de personajes",
+      "Formularios controlados y validaciones",
+      "Persistencia de datos en base de datos",
+    ],
   },
 ];

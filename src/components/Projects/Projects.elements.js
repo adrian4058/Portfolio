@@ -28,12 +28,24 @@ export const ProjectsContent = styled.div`
 export const CardSection = styled.div`
   padding-top: 3rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  justify-items: center;
+  align-items: stretch;
+
   @media screen and (min-width: 1050px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: stretch;
+  }
+`;
+
+export const CardWrapper = styled.div`
+  width: 100%;
+  max-width: 480px; /* Limita el ancho máximo para mantener proporciones */
+
+  @media screen and (min-width: 1050px) {
+    max-width: none; /* En desktop, la grid controla el tamaño */
   }
 `;

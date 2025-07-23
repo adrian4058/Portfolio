@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Cover, Themes } from "./components";
 import { ThemeProvider } from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -9,6 +11,16 @@ function App() {
   useEffect(() => {
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <ThemeProvider theme={Themes[theme]}>

@@ -1,18 +1,37 @@
 import React from "react";
-import { CardContainer, CardImg, CardInfo, CardLinks, CodeLink, DemoLink } from "./Card.elements";
+import {
+  CardContainer,
+  CardImg,
+  CardInfo,
+  CardLinks,
+  CodeLink,
+  DemoLink,
+  TechnologiesList,
+  TechTag,
+  CategoryBadge,
+} from "./Card.elements";
 import { FaGithub } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Card = ({ project }) => {
   return (
     <CardContainer>
-      <CardImg src={project.img} />
+      <CardImg src={project.img} alt={project.title} />
       <CardInfo>
-        <h3>
-          {project.title}
-          <br />
-        </h3>
-        <p>{project.detail}</p>
+        <div className="content-section">
+          <h3>{project.title}</h3>
+          {project.category && <CategoryBadge>{project.category}</CategoryBadge>}
+          <p>{project.detail}</p>
+
+          {project.technologies && (
+            <TechnologiesList>
+              {project.technologies.map((tech, index) => (
+                <TechTag key={index}>{tech}</TechTag>
+              ))}
+            </TechnologiesList>
+          )}
+        </div>
+
         <CardLinks>
           {project.linkcode !== null && (
             <CodeLink href={project.linkcode} target="_blank">

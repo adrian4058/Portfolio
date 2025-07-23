@@ -31,7 +31,7 @@ const About = () => {
   return (
     <AboutSection>
       <AboutContent>
-        <AboutMe id="about" data-aos="fade-up">
+        <AboutMe id="about">
           <h2>
             Acerca de mí
             <span>.</span>
@@ -54,12 +54,12 @@ const About = () => {
           </p>
         </AboutMe>
         <AboutEducation>
-          <Experience data-aos="fade-up" data-aos-delay="100">
+          <Experience>
             <h3>Experiencia profesional:</h3>
             <div>
               <ul>
                 {experienceInfo.map((experience, index) => (
-                  <li key={index} data-aos="fade-left" data-aos-delay={200 + index * 150}>
+                  <li key={index}>
                     <div className="experience-header">
                       <div className="experience-icon">{getExperienceIcon(experience.company)}</div>
                       <h4 className="experience-title">{experience.position}</h4>
@@ -74,12 +74,12 @@ const About = () => {
               </ul>
             </div>
           </Experience>
-          <Education data-aos="fade-up" data-aos-delay="300">
+          <Education>
             <h3>Educación:</h3>
             <div>
               <ul>
                 {educationInfo.map((education, index) => (
-                  <li key={index} data-aos="fade-right" data-aos-delay={400 + index * 150}>
+                  <li key={index}>
                     {education.profession}
                     <span>
                       {education.institution}
@@ -90,7 +90,7 @@ const About = () => {
               </ul>
             </div>
           </Education>
-          <Technologies data-aos="fade-up" data-aos-delay="500">
+          <Technologies>
             <h3>Tecnologías: </h3>
             <SliderComponent />
           </Technologies>
