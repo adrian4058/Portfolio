@@ -30,28 +30,28 @@ export const educationInfo = [
 ];
 export const experienceInfo = [
   {
-    position: "Desarrollador Web - Tiempo Completo",
+    position: "Desarrollador Web",
     since: "Oct. 2024 - Actualidad",
     company: "EasyLife Marketing",
     detail:
       "Trabajo en el desarrollo y mantenimiento de sitios web utilizando WordPress, HubSpot y CSS. Participo en reuniones diarias bajo la metodología ágil Scrum, colaborando en la optimización de estrategias de marketing digital y automatización de procesos.",
   },
   {
-    position: "Desarrollador Full-Stack - Tiempo Parcial",
+    position: "Desarrollador Full-Stack",
     since: "Feb. 2024 - Ago. 2024",
     company: "Smart Air",
     detail:
       "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y las aplicaciones de eWeLink y SmartThings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
   },
   {
-    position: "Desarrollador Full-Stack - Tiempo Parcial",
+    position: "Desarrollador Full-Stack",
     since: "Oct. 2023 - Mar. 2024",
     company: "Escrito Space",
     detail:
-      "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
+      "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django, ANT Design para los estilos y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
   },
   {
-    position: "Desarrollador Front-End - Contrato temporal",
+    position: "Desarrollador Front-End",
     since: "Ago. 23 - Sep. 23",
     company: "iCreativa Digital",
     detail:
