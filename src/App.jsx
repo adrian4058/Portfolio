@@ -17,9 +17,21 @@ function App() {
       duration: 800,
       offset: 100,
       easing: "ease-in-out",
-      once: true,
+      once: false, // Cambiado a false para permitir re-animaciones
+      mirror: false, // Evita que las animaciones se ejecuten al hacer scroll hacia arriba
     });
   }, []);
+
+  // Efecto para refrescar AOS cuando cambia el tema
+  useEffect(() => {
+    // Esperamos un poco más para que el DOM se actualice completamente
+    const timeoutId = setTimeout(() => {
+      // Reinicializamos AOS completamente para evitar problemas
+      AOS.refreshHard();
+    }, 500);
+
+    return () => clearTimeout(timeoutId);
+  }, [theme]);
 
   return (
     <>
