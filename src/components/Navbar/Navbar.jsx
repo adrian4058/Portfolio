@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import Switch from "../Switch/Switch";
 import {
@@ -32,21 +30,18 @@ const Navbar = ({ theme, setTheme }) => {
   const handleLinkClick = (e, link) => {
     e.preventDefault();
 
-    // Cerrar menú móvil suavemente
     setClicked(false);
 
-    // Smooth scroll a la sección con animación más natural
-    const targetId = link.substring(1); // Quitar el #
+    const targetId = link.substring(1);
     const element = document.getElementById(targetId);
 
     if (element) {
-      const navbarHeight = 80; // Altura del navbar
+      const navbarHeight = 80;
       const elementPosition = element.offsetTop - navbarHeight;
 
-      // Usar una animación personalizada más suave
       const startPosition = window.pageYOffset;
       const distance = elementPosition - startPosition;
-      const duration = Math.min(Math.abs(distance) * 0.5, 1200); // Duración adaptativa, máximo 1.2s
+      const duration = Math.min(Math.abs(distance) * 0.5, 1200);
       let startTime = null;
 
       const animation = (currentTime) => {
@@ -54,7 +49,6 @@ const Navbar = ({ theme, setTheme }) => {
         const timeElapsed = currentTime - startTime;
         const progress = Math.min(timeElapsed / duration, 1);
 
-        // Función de easing más suave (ease-out-cubic)
         const ease = 1 - Math.pow(1 - progress, 3);
 
         window.scrollTo(0, startPosition + distance * ease);
@@ -66,7 +60,6 @@ const Navbar = ({ theme, setTheme }) => {
 
       requestAnimationFrame(animation);
 
-      // Actualizar la sección activa con un pequeño delay
       setTimeout(() => {
         setActiveSection(targetId);
       }, duration * 0.7);
@@ -80,29 +73,23 @@ const Navbar = ({ theme, setTheme }) => {
     { name: "Contacto", link: "#contact" },
   ];
 
-  // Detectar sección activa con debounce para suavidad
   useEffect(() => {
     let timeoutId = null;
 
     const handleScroll = () => {
-      // Limpiar timeout anterior
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
 
-      // Debounce para evitar cambios bruscos
       timeoutId = setTimeout(() => {
         const sections = ["home", "about", "project", "contact"];
-        const navbarHeight = 80; // Altura aproximada del navbar
-        const scrollPosition = window.scrollY + navbarHeight + 30; // Offset reducido
+        const navbarHeight = 80;
+        const scrollPosition = window.scrollY + navbarHeight + 30;
 
-        // Mostrar/ocultar botón scroll to top
         setShowScrollTop(window.scrollY > 300);
 
-        // Detectar sección activa
-        let currentSection = "home"; // Por defecto home
+        let currentSection = "home";
 
-        // Si estamos en la parte superior de la página, siempre será "home"
         if (window.scrollY < 50) {
           currentSection = "home";
         } else {
@@ -123,10 +110,9 @@ const Navbar = ({ theme, setTheme }) => {
         if (currentSection !== activeSection) {
           setActiveSection(currentSection);
         }
-      }, 50); // Debounce de 50ms
+      }, 50);
     };
 
-    // Llamar una vez al inicio para establecer la sección inicial
     handleScroll();
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -140,7 +126,7 @@ const Navbar = ({ theme, setTheme }) => {
 
   const scrollToTop = () => {
     const startPosition = window.pageYOffset;
-    const duration = Math.min(startPosition * 0.3, 1000); // Duración adaptativa, máximo 1s
+    const duration = Math.min(startPosition * 0.3, 1000);
     let startTime = null;
 
     const animation = (currentTime) => {
@@ -148,7 +134,6 @@ const Navbar = ({ theme, setTheme }) => {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
 
-      // Función de easing más suave (ease-out-cubic)
       const ease = 1 - Math.pow(1 - progress, 3);
 
       window.scrollTo(0, startPosition * (1 - ease));
@@ -196,7 +181,6 @@ const Navbar = ({ theme, setTheme }) => {
         </NavBarSize>
       </NavBarContainer>
 
-      {/* Botón Scroll to Top */}
       <ScrollToTopButton onClick={scrollToTop} className={showScrollTop ? "show" : ""}>
         <FaArrowUp />
       </ScrollToTopButton>

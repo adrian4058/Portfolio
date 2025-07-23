@@ -20,7 +20,6 @@ import Footer from "../Footer/Footer";
 import profile_picture from "../../assets/profile_picture.jpeg";
 import CV_PerezAdrian from "../../assets/CV_PerezAdrian.pdf";
 
-// eslint-disable-next-line react/prop-types
 const Cover = ({ theme, setTheme }) => {
   let icono = theme === "light" ? <BsSun /> : <BsMoon />;
 
@@ -40,7 +39,6 @@ const Cover = ({ theme, setTheme }) => {
         const timeElapsed = currentTime - startTime;
         const progress = Math.min(timeElapsed / duration, 1);
 
-        // Función de easing más suave (ease-out-cubic)
         const ease = 1 - Math.pow(1 - progress, 3);
 
         window.scrollTo(0, startPosition + distance * ease);

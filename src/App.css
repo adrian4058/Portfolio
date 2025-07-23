@@ -1,22 +1,16 @@
 #root {
-  /* max-width: 1280px; */
   margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
   overflow-x: hidden;
 }
 
-/* Transiciones suaves para el cambio de tema */
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Evitar que AOS cause problemas durante los cambios de tema */
 .theme-changing [data-aos] {
   animation-play-state: paused !important;
 }
 
-/* Asegurar visibilidad durante cambios de tema */
 .theme-changing * {
   opacity: 1 !important;
   visibility: visible !important;

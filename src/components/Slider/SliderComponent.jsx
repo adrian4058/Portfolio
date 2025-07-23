@@ -4,38 +4,30 @@ import { ImgIcon } from "./SliderComponent.elements";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// Importar imágenes locales - Lenguajes
 import js from "../../assets/icons/js.png";
 import ts from "../../assets/icons/ts.png";
 import python from "../../assets/icons/python.png";
 
-// Frameworks y Librerías Frontend
 import react from "../../assets/icons/react.png";
 import nextjs from "../../assets/icons/nextjs.webp";
 
-// State Management
 import redux from "../../assets/icons/redux.png";
 import zustand from "../../assets/icons/zustand.svg";
 
-// Backend y Frameworks
 import node from "../../assets/icons/node.png";
 import django from "../../assets/icons/django.png";
 
-// Bases de datos
 import postgre from "../../assets/icons/postgre.png";
 
-// Estilos y CSS
 import css from "../../assets/icons/css.png";
 import tailwind from "../../assets/icons/Tailwind.png";
 import mui from "../../assets/icons/mui.png";
 import boot from "../../assets/icons/boot.png";
 import antdesign from "../../assets/icons/ant design.svg";
 
-// Control de versiones
 import git from "../../assets/icons/git.png";
 import github from "../../assets/icons/github.png";
 
-// Herramientas y servicios
 import npm from "../../assets/icons/npm.png";
 import firebase from "../../assets/icons/firebase.png";
 import netlify from "../../assets/icons/netlify.png";
@@ -43,7 +35,6 @@ import render from "../../assets/icons/render.png";
 import wordpress from "../../assets/icons/wordpress.png";
 import hubspot from "../../assets/icons/hubspot.png";
 
-// APIs y servicios de pago
 import mercadopago from "../../assets/icons/mercadopago.png";
 import stripe from "../../assets/icons/stripe.png";
 import twilio from "../../assets/icons/twilio.png";
@@ -100,7 +91,6 @@ const SliderComponent = () => {
   return (
     <div>
       <Slider {...settings}>
-        {/* Lenguajes de Programación */}
         <ImgIcon>
           <img src={js} alt="JavaScript" />
         </ImgIcon>
@@ -111,7 +101,6 @@ const SliderComponent = () => {
           <img src={python} alt="Python" />
         </ImgIcon>
 
-        {/* Frontend Frameworks */}
         <ImgIcon>
           <img src={react} alt="React" />
         </ImgIcon>
@@ -119,7 +108,6 @@ const SliderComponent = () => {
           <img src={nextjs} alt="Next.js" />
         </ImgIcon>
 
-        {/* State Management */}
         <ImgIcon>
           <img src={redux} alt="Redux" />
         </ImgIcon>
@@ -127,7 +115,6 @@ const SliderComponent = () => {
           <img src={zustand} alt="Zustand" />
         </ImgIcon>
 
-        {/* Backend */}
         <ImgIcon>
           <img src={node} alt="Node.js" />
         </ImgIcon>
@@ -135,12 +122,10 @@ const SliderComponent = () => {
           <img src={django} alt="Django" />
         </ImgIcon>
 
-        {/* Base de Datos */}
         <ImgIcon>
           <img src={postgre} alt="PostgreSQL" />
         </ImgIcon>
 
-        {/* Estilos y UI */}
         <ImgIcon>
           <img src={css} alt="CSS" />
         </ImgIcon>
@@ -157,7 +142,6 @@ const SliderComponent = () => {
           <img src={antdesign} alt="Ant Design" />
         </ImgIcon>
 
-        {/* Control de Versiones */}
         <ImgIcon>
           <img src={git} alt="Git" />
         </ImgIcon>
@@ -165,12 +149,10 @@ const SliderComponent = () => {
           <img src={github} alt="GitHub" />
         </ImgIcon>
 
-        {/* Herramientas de Desarrollo */}
         <ImgIcon>
           <img src={npm} alt="npm" />
         </ImgIcon>
 
-        {/* Servicios Cloud y Hosting */}
         <ImgIcon>
           <img src={firebase} alt="Firebase" />
         </ImgIcon>
@@ -181,7 +163,6 @@ const SliderComponent = () => {
           <img src={render} alt="Render" />
         </ImgIcon>
 
-        {/* CMS y Marketing */}
         <ImgIcon>
           <img src={wordpress} alt="WordPress" />
         </ImgIcon>
@@ -189,7 +170,6 @@ const SliderComponent = () => {
           <img src={hubspot} alt="HubSpot" />
         </ImgIcon>
 
-        {/* APIs y Servicios */}
         <ImgIcon>
           <img src={mercadopago} alt="Mercado Pago" />
         </ImgIcon>

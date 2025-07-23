@@ -12,11 +12,6 @@ export const educationInfo = [
     institution: "Escuela Educacion Tecnico Profesional 279",
     since: "2013 - 2021",
   },
-  // {
-  //   profession: "Full Stack Web Developer",
-  //   institution: "Soy Henry",
-  //   since: "2022-2023",
-  // },
   {
     profession: "Ingeniería en informática",
     institution: "UNL",

@@ -17,7 +17,6 @@ export const CoverWrapper = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  ${"" /* background-color: ${({ theme }) => theme.bgc}; */}
 `;
 
 export const InfoContainer = styled.div`
@@ -64,7 +63,6 @@ export const Docs = styled.div`
 
 export const CV = styled.a`
   display: flex;
-  ${"" /* width: 35%; */}
   cursor: pointer;
   justify-content: space-between;
   align-items: center;
@@ -79,7 +77,6 @@ export const CV = styled.a`
   }
 `;
 
-//arrow animated
 const arrowAnimation = keyframes`
   0% {
     transform: translateX(0);
@@ -108,10 +105,8 @@ export const Portfolio = styled.a`
   }
 `;
 
-// info profile
 export const InfoProfile = styled.div`
   display: flex;
-  ${"" /* width: 83.33%; */}
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -153,7 +148,6 @@ export const InfoProfile = styled.div`
   }
 `;
 
-// profile picture animated
 const borderAnimation = keyframes`
   0% {
     border-radius: 50%;

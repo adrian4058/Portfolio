@@ -43,9 +43,9 @@ export const CardSection = styled.div`
 
 export const CardWrapper = styled.div`
   width: 100%;
-  max-width: 480px; /* Limita el ancho máximo para mantener proporciones */
+  max-width: 480px;
 
   @media screen and (min-width: 1050px) {
-    max-width: none; /* En desktop, la grid controla el tamaño */
+    max-width: none;
   }
 `;

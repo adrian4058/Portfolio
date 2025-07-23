@@ -29,7 +29,6 @@ export const NavBarLogos = styled.a`
 
 export const LogoName = styled.img`
   width: 8.5rem;
-  ${"" /* aspect-ratio: 1.3; */}
   object-fit: contain;
 `;
 
