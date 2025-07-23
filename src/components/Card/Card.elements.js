@@ -4,7 +4,8 @@ export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 600px; /* Altura fija para todas las tarjetas */
+  min-height: 600px;
+  height: auto;
   border: 1px solid ${({ theme }) => theme.primary};
   border-radius: 0.75rem;
   overflow: hidden;
@@ -13,6 +14,10 @@ export const CardContainer = styled.div`
   &:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: 1050px) {
+    height: 600px;
   }
 `;
 
@@ -30,17 +35,15 @@ export const CardInfo = styled.div`
   border-top: 3px solid ${({ theme }) => theme.primary};
   flex-direction: column;
   padding: 1.25rem;
-  flex: 1; /* Ocupa todo el espacio restante después de la imagen */
+  flex: 1;
   justify-content: space-between;
-  height: calc(100% - 250px); /* Resta la altura de la imagen */
-  overflow: hidden; /* Previene overflow */
+  height: auto;
 
   .content-section {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
-    overflow: hidden; /* Previene overflow */
     margin-bottom: 1.5rem;
   }
 
@@ -50,21 +53,32 @@ export const CardInfo = styled.div`
     line-height: 1.3;
     color: ${({ theme }) => theme.primary};
     margin: 0 0 0.5rem 0;
-    flex-shrink: 0; /* No se encoge */
+    flex-shrink: 0;
   }
 
   p {
     font-size: 0.95rem;
     line-height: 1.4;
     margin: 0 0 0.75rem 0;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* Limita a 4 líneas */
-    -webkit-box-orient: vertical;
     flex-shrink: 1;
   }
-`;
 
+  @media screen and (min-width: 1050px) {
+    height: calc(100% - 250px);
+    overflow: hidden;
+
+    .content-section {
+      overflow: hidden;
+    }
+
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+    }
+  }
+`;
 export const CardLinks = styled.div`
   display: flex;
   justify-content: start;
@@ -108,9 +122,12 @@ export const TechnologiesList = styled.div`
   flex-wrap: wrap;
   gap: 0.375rem;
   margin: 0.5rem 0 0 0;
-  flex-shrink: 0; /* No se encoge */
-  max-height: 60px; /* Limita la altura máxima */
-  overflow: hidden; /* Oculta tecnologías que no caben */
+  flex-shrink: 0;
+
+  @media screen and (min-width: 1050px) {
+    max-height: 60px;
+    overflow: hidden;
+  }
 `;
 
 export const TechTag = styled.span`

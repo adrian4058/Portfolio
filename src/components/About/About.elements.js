@@ -136,7 +136,7 @@ export const Experience = styled.div`
     content: "";
     position: absolute;
     left: 11px;
-    top: 1.5rem;
+    top: 1.75rem;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -147,17 +147,22 @@ export const Experience = styled.div`
 
   .experience-header {
     display: flex;
-    align-items: flex-end;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 0.75rem;
     margin-bottom: 0.75rem;
     width: 100%;
-  }
+    min-height: 1.5rem;
 
-  .experience-icon {
-    color: ${({ theme }) => theme.primary};
-    font-size: 1.4rem;
-    flex-shrink: 0;
-    line-height: 1;
+    > svg {
+      color: ${({ theme }) => theme.primary};
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      width: 1.4rem;
+      height: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .experience-title {
@@ -165,7 +170,10 @@ export const Experience = styled.div`
     color: ${({ theme }) => theme.text};
     margin: 0;
     font-size: 1.1rem;
-    line-height: 1;
+    line-height: 1.4;
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
   ul li span {
@@ -179,7 +187,7 @@ export const Experience = styled.div`
   ul li span u {
     font-style: normal;
     font-weight: 600;
-    color: #22d3ee; /* Celeste que contrasta bien en ambos temas */
+    color: #22d3ee;
     text-decoration: none;
   }
 
@@ -193,16 +201,12 @@ export const Experience = styled.div`
   ul li span .experience-date {
     font-size: 0.875rem;
     font-weight: 500;
-    color: #0891b2; /* Celeste más oscuro para las fechas */
+    color: #0891b2;
     margin-top: 0.25rem;
     font-style: normal;
   }
 
   @media screen and (max-width: 1050px) {
-    div {
-      flex-direction: column;
-    }
-
     ul::before {
       left: 15px;
     }
@@ -213,45 +217,61 @@ export const Experience = styled.div`
 
     ul li::before {
       left: 6px;
+      top: 1.1rem;
       width: 16px;
       height: 16px;
     }
 
     .experience-header {
-      gap: 0.4rem;
-      margin-bottom: 0.5rem;
-      align-items: flex-end;
-    }
+      gap: 0.6rem;
+      margin-bottom: 0.6rem;
+      min-height: 1.3rem;
 
-    .experience-icon {
-      font-size: 1.2rem;
+      > svg {
+        font-size: 1.2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+      }
     }
 
     .experience-title {
       font-size: 1rem;
-      line-height: 1;
+      line-height: 1.2;
     }
   }
 
   @media screen and (max-width: 480px) {
+    ul::before {
+      left: 12px;
+    }
+
     ul li {
       padding-left: 40px;
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
 
-    .experience-header {
-      gap: 0.3rem;
-      align-items: flex-end;
+    ul li::before {
+      left: 4px;
+      top: 1.05rem;
+      width: 14px;
+      height: 14px;
     }
 
-    .experience-icon {
-      font-size: 1.1rem;
+    .experience-header {
+      gap: 0.5rem;
+      min-height: 1.2rem;
+
+      > svg {
+        font-size: 1.1rem;
+        width: 1.1rem;
+        height: 1.1rem;
+      }
     }
 
     .experience-title {
       font-size: 0.95rem;
-      line-height: 1;
+      line-height: 1.2;
     }
 
     ul li span .experience-date {

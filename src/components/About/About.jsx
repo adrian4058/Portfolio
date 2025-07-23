@@ -61,7 +61,7 @@ const About = () => {
                 {experienceInfo.map((experience, index) => (
                   <li key={index} data-aos="fade-left" data-aos-delay={200 + index * 150}>
                     <div className="experience-header">
-                      <div className="experience-icon">{getExperienceIcon(experience.company)}</div>
+                      {getExperienceIcon(experience.company)}
                       <h4 className="experience-title">{experience.position}</h4>
                     </div>
                     <span>
