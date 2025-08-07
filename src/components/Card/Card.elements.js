@@ -44,7 +44,7 @@ export const CardInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
-    margin-bottom: 1.5rem;
+    ${'' /* margin-bottom: 1.5rem; */}
   }
 
   h3 {
@@ -57,14 +57,14 @@ export const CardInfo = styled.div`
   }
 
   p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     line-height: 1.4;
     margin: 0 0 0.75rem 0;
     flex-shrink: 1;
   }
 
   @media screen and (min-width: 1050px) {
-    height: calc(100% - 250px);
+    height: calc(100% - 150px);
     overflow: hidden;
 
     .content-section {
@@ -72,9 +72,7 @@ export const CardInfo = styled.div`
     }
 
     p {
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
     }
   }
