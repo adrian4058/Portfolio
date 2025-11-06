@@ -44,7 +44,7 @@ export const CardInfo = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
-    ${'' /* margin-bottom: 1.5rem; */}
+    overflow-y: auto;
   }
 
   h3 {
@@ -58,23 +58,14 @@ export const CardInfo = styled.div`
 
   p {
     font-size: 0.8rem;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0 0 0.75rem 0;
-    flex-shrink: 1;
+    flex-grow: 1;
+    text-align: justify;
   }
 
   @media screen and (min-width: 1050px) {
-    height: calc(100% - 150px);
-    overflow: hidden;
-
-    .content-section {
-      overflow: hidden;
-    }
-
-    p {
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
+    height: calc(100% - 250px);
   }
 `;
 export const CardLinks = styled.div`
@@ -121,11 +112,6 @@ export const TechnologiesList = styled.div`
   gap: 0.375rem;
   margin: 0.5rem 0 0 0;
   flex-shrink: 0;
-
-  @media screen and (min-width: 1050px) {
-    max-height: 60px;
-    overflow: hidden;
-  }
 `;
 
 export const TechTag = styled.span`

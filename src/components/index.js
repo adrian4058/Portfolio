@@ -5,6 +5,7 @@ import gestoria from "../assets/gestoria.png";
 import pokeproject from "../assets/pokeproject.png";
 import mivete from "../assets/mivete.png";
 import muchiutti from "../assets/muchiutti.png";
+import n8nbot from "../assets/n8nbot.png"; // Placeholder - reemplazar con imagen real
 
 export const educationInfo = [
   {
@@ -67,6 +68,26 @@ export const experienceInfo = [
 ];
 
 export const projectsInfo = [
+  {
+    title: "Bot WhatsApp con n8n + IA",
+    detail:
+      "Sistema de automatización inteligente para gestión de hamburgueserías usando n8n. Bot conversacional de WhatsApp que procesa pedidos, reservas y consultas automáticamente. Integrado con IA para respuestas naturales y backend robusto multi-tenant. Proyecto en desarrollo activo.",
+    technologies: ["n8n", "IA", "WhatsApp Business API", "Spring Boot", "PostgreSQL", "WebSocket", "JWT"],
+    category: "En Desarrollo",
+    linkcode: null,
+    linkdemo: "https://drive.google.com/file/d/1QCL9yDUWUdp0xZGWiUGwwNYZVsPnYvhP/view?usp=sharing",
+    img: n8nbot,
+    features: [
+      "Bot conversacional con IA integrada",
+      "Automatización de pedidos via WhatsApp",
+      "Sistema de reservas inteligente",
+      "Asignación automática de repartidores",
+      "Backend multi-tenant con Spring Boot",
+      "Notificaciones en tiempo real (WebSocket)",
+      "Sistema de planes de suscripción",
+      "Integración con webhooks e impresoras",
+    ],
+  },
   {
     title: "Muchiutti Representaciones",
     detail:
