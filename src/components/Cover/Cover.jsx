@@ -18,7 +18,7 @@ import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import profile_picture from "../../assets/profile_picture.jpeg";
-import CV_PerezAdrian from "../../assets/CV_PerezAdrian.pdf";
+import CV_AdrianPerez from "../../assets/CV_AdrianPerez.pdf";
 
 const Cover = ({ theme, setTheme }) => {
   let icono = theme === "light" ? <BsSun /> : <BsMoon />;
@@ -60,9 +60,9 @@ const Cover = ({ theme, setTheme }) => {
             <ProfilePicture src={profile_picture} />
             <InfoProfile>
               <h2>Hola, soy Adrián 👋</h2>
-              <h1>Desarrollador Full-Stack</h1>
+              <h1>AI Agent & Full Stack Developer</h1>
               <Docs>
-                <CV href={CV_PerezAdrian} target="_blank">
+                <CV href={CV_AdrianPerez} target="_blank">
                   Curriculum <FaSheetPlastic className="sheetPlastic" />
                 </CV>
                 <Portfolio onClick={handlePortfolioClick} style={{ cursor: "pointer" }}>

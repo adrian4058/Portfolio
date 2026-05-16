@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import {
   ContactContent,
@@ -22,35 +21,31 @@ const Contact = () => {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
 
-  const notifySuccess = () => toast.success("¡Mensaje enviado con éxito!");
-  const notifyError = () => toast.error("Error al enviar el mensaje.");
+  const notifySuccess = () => toast.success("¡Redirigiendo a WhatsApp!");
 
   const clearForm = () => {
     form.current.reset();
   };
 
-  const sendEmail = (e) => {
+  const sendWhatsApp = (e) => {
     e.preventDefault();
     setIsSending(true);
 
-    emailjs
-      .sendForm("service_prwagzq", "template_h5h6iyp", form.current, {
-        publicKey: "UUeH-7dFWC_0DwtZK",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          notifySuccess();
-          clearForm();
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-          notifyError();
-        }
-      )
-      .finally(() => {
-        setIsSending(false);
-      });
+    const formData = new FormData(form.current);
+    const userName = formData.get("user_name");
+    const userEmail = formData.get("user_email");
+    const message = formData.get("message");
+
+    const whatsappMessage = `Hola, soy ${userName}\nEmail: ${userEmail}\n\nMensaje: ${message}`;
+    const whatsappURL = `https://wa.me/5493493665512?text=${encodeURIComponent(whatsappMessage)}`;
+
+    notifySuccess();
+    clearForm();
+    setIsSending(false);
+
+    setTimeout(() => {
+      window.open(whatsappURL, "_blank");
+    }, 500);
   };
 
   return (
@@ -63,7 +58,7 @@ const Contact = () => {
           <p>Si querés saber más sobre mí, enviame un mensaje 😁.</p>
         </ContactTitle>
         <FormAndContactInfo>
-          <FormContent ref={form} onSubmit={sendEmail}>
+          <FormContent ref={form} onSubmit={sendWhatsApp}>
             <FormInputLabel>
               <label>Tu nombre:</label>
               <input required type="text" name="user_name" placeholder="Escribe tu nombre" />

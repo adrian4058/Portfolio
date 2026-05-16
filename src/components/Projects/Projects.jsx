@@ -1,7 +1,7 @@
 import React from "react";
-import { CardSection, ProjectsContent, ProjectsSection, CardWrapper } from "./Projects.elements";
+import { CardSection, ProjectsContent, ProjectsSection, CardWrapper, OtherProjectsSection, OtherProjectsList, OtherProjectItem } from "./Projects.elements";
 import Card from "../Card/Card";
-import { projectsInfo } from "..";
+import { projectsInfo, otherProjectsInfo } from "..";
 
 const Projects = () => {
   return (
@@ -18,6 +18,18 @@ const Projects = () => {
             </CardWrapper>
           ))}
         </CardSection>
+        <OtherProjectsSection data-aos="fade-up">
+          <h4>Otros proyectos</h4>
+          <OtherProjectsList>
+            {otherProjectsInfo.map((p, i) => (
+              <OtherProjectItem key={i}>
+                <span className="title">{p.title}</span>
+                {p.detail && <span className="detail">— {p.detail}</span>}
+                <span className="tech">{p.tech}</span>
+              </OtherProjectItem>
+            ))}
+          </OtherProjectsList>
+        </OtherProjectsSection>
       </ProjectsContent>
     </ProjectsSection>
   );

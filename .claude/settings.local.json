@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Remove-Item \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\Dev\\\\Portfolio\\\\src\\\\assets\\\\CV_PerezAdrian.pdf\" -Force)"
+    ]
+  }
+}

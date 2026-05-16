@@ -1,11 +1,8 @@
 export { default as Cover } from "./Cover/Cover";
 export { default as Themes } from "./Theme/Themes";
-import booksproject from "../assets/booksproject.png";
-import gestoria from "../assets/gestoria.png";
-import pokeproject from "../assets/pokeproject.png";
 import mivete from "../assets/mivete.png";
 import muchiutti from "../assets/muchiutti.png";
-import n8nbot from "../assets/n8nbot.png"; // Placeholder - reemplazar con imagen real
+import n8nbot from "../assets/n8nbot.png";
 
 export const educationInfo = [
   {
@@ -21,17 +18,25 @@ export const educationInfo = [
   {
     profession: "Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios web",
     institution: "UNL",
-    since: "2024 - Presente",
+    since: "2024 - Esperado: Fines de Agosto 2026",
   },
 ];
 export const experienceInfo = [
   {
+    position: "Co-fundador & Full Stack Developer",
+    since: "Dic. 2025 - Actualidad",
+    company: "Pierini IA",
+    location: "Santa Fe, Argentina • En remoto",
+    detail:
+      "Plataforma SaaS multi-tenant de chatbots con IA para inmobiliarias y concesionarias (10 clientes activos, ~10.000 mensajes/mes). Lideré la migración desde N8N hacia una arquitectura backend propia. Diseñé el pipeline conversacional completo (sesiones, historial, enrutado de intención, herramientas IA y envío multicanal), la arquitectura multi-tenant con aislamiento por cliente, las integraciones con WhatsApp Business, Instagram y Messenger, y el panel operativo con asignación de vendedores y modo embed.",
+  },
+  {
     position: "Desarrollador Web",
-    since: "Oct. 2024 - Actualidad",
+    since: "Oct. 2024 - May. 2026",
     company: "EasyLife Marketing",
     location: "Canarias, España • En remoto",
     detail:
-      "Trabajo en el desarrollo y mantenimiento de sitios web utilizando WordPress, HubSpot y CSS. Participo en reuniones diarias bajo la metodología ágil Scrum, colaborando en la optimización de estrategias de marketing digital y automatización de procesos.",
+      "Desarrollé y mantuve sitios web con WordPress, HubSpot y CSS. Participé en reuniones diarias bajo Scrum, contribuyendo en estrategias de marketing digital y automatización de procesos.",
   },
   {
     position: "Desarrollador Full-Stack",
@@ -39,7 +44,7 @@ export const experienceInfo = [
     company: "Smart Air",
     location: "Hong Kong SAR, China • En remoto",
     detail:
-      "Colaboré en el desarrollo Full Stack utilizando Next.js, Python con Django y componentes de MUI en el entorno de Smart Air. Utilicé la plataforma Qinping para el monitoreo de calidad del aire y las aplicaciones de eWeLink y SmartThings para el control remoto de los dispositivos. Además, implementé un sistema de geolocalización y mapeo interactivo para visualizar la ubicación de los purificadores en tiempo real, entre otros.",
+      "Desarrollé features Full Stack con Next.js, Django y MUI. Implementé geolocalización en tiempo real de purificadores de aire e integré plataformas IoT (Qinping, eWeLink, SmartThings) para monitoreo ambiental y control remoto de dispositivos. Metodología SCRUM.",
   },
   {
     position: "Desarrollador Full-Stack",
@@ -47,15 +52,15 @@ export const experienceInfo = [
     company: "Escrito Space",
     location: "En remoto",
     detail:
-      "Colaboración estrecha en equipo de dos personas, utilizando Next.js, Python con Django, ANT Design para los estilos y servicios de AWS. Responsable del desarrollo de la plataforma web, implementando nuevas funcionalidades y mejoras. Reuniones semanales de seguimiento para revisar progreso y coordinar esfuerzos.",
+      "Desarrollé la plataforma web en equipo reducido (dos personas) con Next.js, Django, Ant Design y AWS. Responsable de nuevas funcionalidades y mejoras continuas, con reuniones semanales de seguimiento y coordinación.",
   },
   {
     position: "Desarrollador Front-End",
-    since: "Ago. 2023 - Oct. 2023",
+    since: "Ago. 2023 - Sep. 2023",
     company: "iCreativa Digital",
     location: "Bogotá, Colombia • En remoto",
     detail:
-      "Parte del equipo de desarrollo, enfocado en diseño de aplicación web con React, CSS y GSAP. Participación en reuniones diarias para revisar progreso y superar desafíos.",
+      "Desarrollé interfaces web con React, CSS y GSAP, implementando animaciones y componentes interactivos en un equipo ágil con reuniones diarias.",
   },
   {
     position: "Desarrollador de Software",
@@ -63,29 +68,48 @@ export const experienceInfo = [
     company: "Alas Empresa Junior",
     location: "Santa Fe, Argentina • En remoto",
     detail:
-      "Trabajo en organización sin fines de lucro en TIC, brindando soluciones informáticas, soporte web y gestión de correo.",
+      "Brindé soluciones informáticas, soporte web y gestión de plataformas en una organización sin fines de lucro del sector TIC.",
   },
 ];
 
 export const projectsInfo = [
   {
-    title: "Bot WhatsApp con n8n + IA",
+    title: "Plataforma Pierini IA",
     detail:
-      "Sistema de automatización inteligente para gestión de hamburgueserías usando n8n. Bot conversacional de WhatsApp que procesa pedidos, reservas y consultas automáticamente. Integrado con IA para respuestas naturales y backend robusto multi-tenant. Proyecto en desarrollo activo.",
-    technologies: ["n8n", "IA", "WhatsApp Business API", "Spring Boot", "PostgreSQL", "WebSocket", "JWT"],
-    category: "En Desarrollo",
+      "Plataforma SaaS multi-tenant que centraliza el backend y panel operativo para atención multicanal con IA. Orientada a inmobiliarias y concesionarias, con soporte de WhatsApp, Instagram, Messenger y comentarios. Opera con 10 clientes activos procesando ~10.000 mensajes/mes.",
+    technologies: ["NestJS", "TypeScript", "PostgreSQL", "TypeORM", "OpenAI", "Meta Business API", "Next.js", "Tailwind CSS", "Radix UI"],
+    category: "Co-fundador",
     linkcode: null,
-    linkdemo: "https://drive.google.com/file/d/1QCL9yDUWUdp0xZGWiUGwwNYZVsPnYvhP/view?usp=sharing",
+    linkdemo: "https://api.whatsapp.com/send/?phone=5493492697716&text=Hola,%20busco%20un%20departamento%20de%202%20dormitorios",
     img: n8nbot,
     features: [
-      "Bot conversacional con IA integrada",
-      "Automatización de pedidos via WhatsApp",
-      "Sistema de reservas inteligente",
-      "Asignación automática de repartidores",
-      "Backend multi-tenant con Spring Boot",
-      "Notificaciones en tiempo real (WebSocket)",
-      "Sistema de planes de suscripción",
-      "Integración con webhooks e impresoras",
+      "Arquitectura multi-tenant con aislamiento por cliente",
+      "Pipeline conversacional: sesiones, historial, enrutado de intención y herramientas IA",
+      "Integraciones con WhatsApp Business, Instagram y Messenger (Meta Business API)",
+      "Motor de herramientas por vertical (inmobiliaria / concesionaria)",
+      "CRM integrado con Tokko + handoff automático por intención comercial",
+      "Panel operativo: lectura colaborativa, asignación de vendedores y reportes",
+      "Modo embed con tokens y scopes",
+      "10 clientes activos · ~10.000 mensajes/mes",
+    ],
+  },
+  {
+    title: "App Abogados – Vertical Previsional",
+    detail:
+      "Aplicación para el área previsional que guía al operador por pasos: alta de caso, carga de PDF ANSES, extracción con IA, validación manual y cálculo legal determinístico. Preparada para integrarse con login central multi-app.",
+    technologies: ["Node.js", "Express", "TypeScript", "PostgreSQL", "OpenAI", "JWT", "Zod", "Swagger", "React", "Vite"],
+    category: "Laboral",
+    linkcode: null,
+    linkdemo: null,
+    img: n8nbot,
+    features: [
+      "API REST con gestión completa de casos, estados y trazabilidad",
+      "Pipeline de extracción por chunks con merge y normalización de PDFs ANSES",
+      "Validación de estructura mínima antes de invocar IA",
+      "Cálculo legal separado de la IA con recálculo controlado",
+      "Generación de resumen final post-cálculo",
+      "Wizard por pasos orientado a operación",
+      "Contratos estables con OpenAPI/Swagger",
     ],
   },
   {
@@ -124,54 +148,27 @@ export const projectsInfo = [
       "Interfaz amigable para adultos mayores",
     ],
   },
+];
+
+export const otherProjectsInfo = [
   {
-    title: "BooksStore",
-    detail:
-      "E-commerce completo de libros físicos y digitales desarrollado bajo metodología SCRUM. Implementa Redux para gestión de estado global, autenticación con Auth0, pasarela de pagos con MercadoPago, sistema de reseñas y panel administrativo completo.",
-    technologies: ["React", "Node.js", "Redux", "Redux Toolkit", "SQL", "CSS", "Auth0", "MercadoPago", "Nodemailer"],
-    category: "Proyecto Grupal",
-    linkcode: "https://github.com/adrian4058/Books",
-    linkdemo:
-      "https://www.linkedin.com/posts/adrian4058_react-javascript-node-activity-7087177762955784193-3w1E?utm_source=share&utm_medium=member_desktop",
-    img: booksproject,
-    features: [
-      "E-commerce completo con carrito de compras",
-      "Gestión de estado global con Redux",
-      "Autenticación y autorización con Auth0",
-      "Pagos integrados con MercadoPago",
-      "Sistema de reseñas y calificaciones",
-      "Panel administrativo avanzado",
-      "ChatBot de soporte integrado",
-    ],
+    title: "Bot WhatsApp para Hamburgueserías",
+    detail: "Gestión de pedidos, stock e ingredientes en tiempo real desde el cliente hasta cocina",
+    tech: "n8n · WhatsApp Business API · Spring Boot · PostgreSQL · WebSocket",
+  },
+  {
+    title: "BooksStore – E-commerce grupal",
+    detail: "E-commerce completo con carrito, autenticación y pagos integrados",
+    tech: "React · Node.js · Redux · Auth0 · MercadoPago",
   },
   {
     title: "Gestoría Adriana",
-    detail:
-      "SPA responsiva para consultoría de gestoría del automotor. Integra mapas interactivos con React Leaflet para ubicar oficinas y sistema de consultas de presupuestos vía EmailJS.",
-    technologies: ["TypeScript", "React", "Tailwind CSS", "EmailJS", "React Leaflet"],
-    category: "Freelance",
-    linkcode: "https://github.com/adrian4058/Gestoria",
-    linkdemo: "https://gestoriaadriana.netlify.app",
-    img: gestoria,
-    features: ["Diseño totalmente responsivo", "Mapas interactivos", "Consulta de presupuestos", "Optimización SEO"],
+    detail: "SPA corporativa con mapas interactivos y sistema de presupuestos",
+    tech: "TypeScript · React · Tailwind CSS · React Leaflet",
   },
   {
-    title: "Pokemon App",
-    detail:
-      "Aplicación didáctica para explorar el mundo Pokémon con arquitectura Redux para manejo de estado complejo. API REST propia consumiendo PokeApi, con funcionalidades avanzadas de búsqueda, filtrado, ordenamiento y creación de personajes personalizados.",
-    technologies: ["React", "Node.js", "Redux", "Redux Toolkit", "SQL", "CSS"],
-    category: "Proyecto Individual",
-    linkcode: "https://github.com/adrian4058/ProyectoPokemon",
-    linkdemo:
-      "https://www.linkedin.com/posts/adrian4058_javascript-react-redux-activity-7047231593916043264-phlf?utm_source=share&utm_medium=member_desktop",
-    img: pokeproject,
-    features: [
-      "Arquitectura Redux para estado global",
-      "API REST propia consumiendo PokeApi",
-      "Búsqueda y filtros avanzados",
-      "Creación y edición de personajes",
-      "Formularios controlados y validaciones",
-      "Persistencia de datos en base de datos",
-    ],
+    title: "Pokémon App",
+    detail: "Explorador con API REST propia, filtros avanzados y creación de personajes",
+    tech: "React · Node.js · Redux · PostgreSQL",
   },
 ];

@@ -38,9 +38,11 @@ const Card = ({ project }) => {
               Código <FaGithub />
             </CodeLink>
           )}
-          <DemoLink href={project.linkdemo} target="_blank">
-            Demo <FaArrowUpRightFromSquare />
-          </DemoLink>
+          {project.linkdemo !== null && (
+            <DemoLink href={project.linkdemo} target="_blank">
+              Demo <FaArrowUpRightFromSquare />
+            </DemoLink>
+          )}
         </CardLinks>
       </CardInfo>
     </CardContainer>

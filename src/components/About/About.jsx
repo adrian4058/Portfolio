@@ -37,20 +37,18 @@ const About = () => {
             <span>.</span>
           </h2>
           <p>
-            Por curiosidad a prueba y error desde chico me llevó a explorar la electrónica, electricidad e informática.
-            Aprendí resolviendo problemas en dispositivos electrónicos y me apasioné por todo lo que tenga que ver con
-            una computadora de por medio. Durante mi formación como Técnico Electromecánico, descubrí mi interés por la
-            programación al trabajar con Controladores Lógicos Programables (PLC) en la materia de Automatización. Este
-            momento marcó el inicio de mi camino en la programación.
+            La curiosidad me llevó desde chico a desarmar dispositivos electrónicos, explorar circuitos y entender cómo
+            funcionan las cosas. Esa misma curiosidad me encontró frente a mis primeros programas en PLC durante mi
+            formación como Técnico Electromecánico, marcando el inicio de mi camino en el desarrollo de software.
           </p>
           <br />
           <p>
-            Combino mis estudios en la Tecnicatura Informática aplicada al Diseño Multimedia y de Sitios Web de la UNL
-            con la experiencia adquirida durante mi trabajo en <u>EasyLife Marketing</u>, donde participo en reuniones
-            diarias bajo la metodología ágil Scrum y trabajo diariamente con <span>WordPress, HubSpot y CSS</span>.
-            Desde que me sumergí en el mundo de la tecnología, descubrí que las herramientas y tecnologías que
-            utilizamos están en constante evolución. Esto me motiva a seguir aprendiendo cada día para mantenerme
-            actualizado y aprovechar al máximo las nuevas oportunidades.
+            Hoy me especializo en <span>sistemas conversacionales con IA</span> — pipelines que integran modelos de
+            lenguaje, automatización y canales reales como WhatsApp, Instagram y Messenger. Como co-fundador de{" "}
+            <span>Pierini IA</span>, lideré la construcción de una plataforma SaaS multi-tenant con 10 clientes activos
+            que procesa ~10.000 mensajes por mes. También he trabajado en proyectos internacionales (Hong Kong, España,
+            Colombia), siempre con el mismo enfoque: entender el negocio antes de escribir código y construir productos
+            con impacto concreto.
           </p>
         </AboutMe>
         <AboutEducation>

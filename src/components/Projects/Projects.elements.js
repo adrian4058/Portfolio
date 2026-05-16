@@ -49,3 +49,55 @@ export const CardWrapper = styled.div`
     max-width: none;
   }
 `;
+
+export const OtherProjectsSection = styled.div`
+  margin-top: 3rem;
+  width: 100%;
+  border-top: 1px solid ${({ theme }) => theme.primary}30;
+  padding-top: 2rem;
+
+  h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.text};
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const OtherProjectsList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+`;
+
+export const OtherProjectItem = styled.li`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+
+  .title {
+    font-weight: 600;
+    color: ${({ theme }) => theme.text};
+  }
+
+  .detail {
+    font-size: 0.8rem;
+    color: ${({ theme }) => theme.text};
+    opacity: 0.65;
+  }
+
+  .tech {
+    font-size: 0.72rem;
+    color: ${({ theme }) => theme.text};
+    opacity: 0.4;
+    font-style: italic;
+  }
+`;
